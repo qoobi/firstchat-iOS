@@ -179,7 +179,7 @@
                     <connections>
                         <outlet property="tableView" destination="1pY-td-Abz" id="xCf-oQ-RPQ"/>
                         <outlet property="tbItem" destination="cPa-gy-q4n" id="uYl-bN-2ri"/>
-                        <segue destination="cFn-Om-Ogt" kind="showDetail" identifier="to chat window" id="JzO-W5-3bY"/>
+                        <segue destination="cFn-Om-Ogt" kind="presentation" identifier="to chat window" id="JzO-W5-3bY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -199,6 +199,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MD-S4-4gM">
+                                <rect key="frame" x="5" y="565" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Ilf-c4-7Pj"/>
+                                </constraints>
+                                <state key="normal" title="image"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-Oh-8ss">
                                 <rect key="frame" x="561" y="565" width="34" height="30"/>
                                 <constraints>
@@ -216,21 +223,29 @@
                                     <outlet property="delegate" destination="cFn-Om-Ogt" id="UNc-TK-t0e"/>
                                 </connections>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MD-S4-4gM">
-                                <rect key="frame" x="5" y="565" width="42" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="Ilf-c4-7Pj"/>
-                                </constraints>
-                                <state key="normal" title="image"/>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JZ-GU-ftV">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="oBs-pd-AsP">
+                                        <barButtonItem key="leftBarButtonItem" title="chats" id="DyX-XD-wZ3">
+                                            <connections>
+                                                <action selector="back:" destination="cFn-Om-Ogt" id="Ha8-pm-pla"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="9MD-S4-4gM" secondAttribute="bottom" constant="5" id="405-xT-lIN"/>
+                            <constraint firstItem="3JZ-GU-ftV" firstAttribute="top" secondItem="Ay5-yQ-tc1" secondAttribute="bottom" id="9Kn-1A-oJO"/>
                             <constraint firstAttribute="trailing" secondItem="nUs-Oh-8ss" secondAttribute="trailing" constant="5" id="9s9-9L-HsY"/>
                             <constraint firstItem="8sB-Ki-Xpn" firstAttribute="leading" secondItem="9MD-S4-4gM" secondAttribute="trailing" constant="5" id="BDa-gc-pNJ"/>
+                            <constraint firstItem="3JZ-GU-ftV" firstAttribute="centerX" secondItem="Zdt-Yb-0c7" secondAttribute="centerX" id="OsG-CH-TkQ"/>
                             <constraint firstItem="9MD-S4-4gM" firstAttribute="leading" secondItem="Zdt-Yb-0c7" secondAttribute="leading" constant="5" id="T3G-K9-nme"/>
                             <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="nUs-Oh-8ss" secondAttribute="bottom" constant="5" id="fP8-86-Lnv"/>
+                            <constraint firstItem="3JZ-GU-ftV" firstAttribute="width" secondItem="Zdt-Yb-0c7" secondAttribute="width" id="fko-QD-YoL"/>
                             <constraint firstItem="nUs-Oh-8ss" firstAttribute="leading" secondItem="8sB-Ki-Xpn" secondAttribute="trailing" constant="5" id="lQA-9q-gx1"/>
                             <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="8sB-Ki-Xpn" secondAttribute="bottom" constant="5" id="ovg-PS-K1J"/>
                         </constraints>

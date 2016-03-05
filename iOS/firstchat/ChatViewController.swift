@@ -14,6 +14,10 @@ class ChatViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var message: UITextView!
     
+    @IBAction func back(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBOutlet weak var keyboardHeight1: NSLayoutConstraint!
     @IBOutlet weak var keyboardHeight2: NSLayoutConstraint!
     @IBOutlet weak var keyboardHeight3: NSLayoutConstraint!
