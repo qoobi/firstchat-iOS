@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A67595F61C8ADA2900B5ACD3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */; };
 		A6895F411C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */; };
 		A6895F4E1C80C547003B69E3 /* Bitter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F4A1C80C547003B69E3 /* Bitter-Bold.otf */; };
 		A6895F4F1C80C547003B69E3 /* Bitter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F4B1C80C547003B69E3 /* Bitter-BoldItalic.otf */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		A6895F4A1C80C547003B69E3 /* Bitter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Bold.otf"; sourceTree = "<group>"; };
 		A6895F4B1C80C547003B69E3 /* Bitter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				A68CAB631C8035FF00C87911 /* FirstViewController.swift */,
 				A68CAB651C8035FF00C87911 /* SecondViewController.swift */,
 				A6895F541C819269003B69E3 /* ThirdViewController.swift */,
+				A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */,
 				A68CAB671C8035FF00C87911 /* Main.storyboard */,
 				A6895F561C819E0D003B69E3 /* TabBarController.swift */,
 				A6895F521C81899B003B69E3 /* Connection.swift */,
@@ -249,6 +252,7 @@
 				A6895F551C819269003B69E3 /* ThirdViewController.swift in Sources */,
 				A68CAB621C8035FF00C87911 /* AppDelegate.swift in Sources */,
 				A6895F411C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift in Sources */,
+				A67595F61C8ADA2900B5ACD3 /* ChatViewController.swift in Sources */,
 				A68CAB641C8035FF00C87911 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

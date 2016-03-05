@@ -179,11 +179,73 @@
                     <connections>
                         <outlet property="tableView" destination="1pY-td-Abz" id="xCf-oQ-RPQ"/>
                         <outlet property="tbItem" destination="cPa-gy-q4n" id="uYl-bN-2ri"/>
+                        <segue destination="cFn-Om-Ogt" kind="showDetail" identifier="to chat window" id="JzO-W5-3bY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="11"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="Pd6-nh-ubb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4A-4x-ztw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="cFn-Om-Ogt" customClass="ChatViewController" customModule="firstchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ay5-yQ-tc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="cVU-RX-jcu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zdt-Yb-0c7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-Oh-8ss">
+                                <rect key="frame" x="561" y="565" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="v9s-iq-qJC"/>
+                                </constraints>
+                                <state key="normal" title="send"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8sB-Ki-Xpn">
+                                <rect key="frame" x="52" y="462" width="504" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cFn-Om-Ogt" id="UNc-TK-t0e"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MD-S4-4gM">
+                                <rect key="frame" x="5" y="565" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Ilf-c4-7Pj"/>
+                                </constraints>
+                                <state key="normal" title="image"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="9MD-S4-4gM" secondAttribute="bottom" constant="5" id="405-xT-lIN"/>
+                            <constraint firstAttribute="trailing" secondItem="nUs-Oh-8ss" secondAttribute="trailing" constant="5" id="9s9-9L-HsY"/>
+                            <constraint firstItem="8sB-Ki-Xpn" firstAttribute="leading" secondItem="9MD-S4-4gM" secondAttribute="trailing" constant="5" id="BDa-gc-pNJ"/>
+                            <constraint firstItem="9MD-S4-4gM" firstAttribute="leading" secondItem="Zdt-Yb-0c7" secondAttribute="leading" constant="5" id="T3G-K9-nme"/>
+                            <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="nUs-Oh-8ss" secondAttribute="bottom" constant="5" id="fP8-86-Lnv"/>
+                            <constraint firstItem="nUs-Oh-8ss" firstAttribute="leading" secondItem="8sB-Ki-Xpn" secondAttribute="trailing" constant="5" id="lQA-9q-gx1"/>
+                            <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="8sB-Ki-Xpn" secondAttribute="bottom" constant="5" id="ovg-PS-K1J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageButton" destination="9MD-S4-4gM" id="sqs-G7-6A0"/>
+                        <outlet property="keyboardHeight1" destination="405-xT-lIN" id="vbn-7o-qyQ"/>
+                        <outlet property="keyboardHeight2" destination="fP8-86-Lnv" id="8FF-3c-N3q"/>
+                        <outlet property="keyboardHeight3" destination="ovg-PS-K1J" id="oYI-TT-MtJ"/>
+                        <outlet property="message" destination="8sB-Ki-Xpn" id="vWu-gH-U0e"/>
+                        <outlet property="sendButton" destination="nUs-Oh-8ss" id="mrm-rF-UG3"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1599" y="11"/>
         </scene>
         <!--settings-->
         <scene sceneID="rr0-q6-xY6">
