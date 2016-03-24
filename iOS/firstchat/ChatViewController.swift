@@ -10,9 +10,11 @@ import UIKit
 
 class ChatViewController: UIViewController, UITextViewDelegate {
     
+    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
-    @IBOutlet weak var message: UITextView!
+    @IBOutlet weak var message: RSKGrowingTextView!
     
     @IBAction func back(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -34,13 +36,23 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+        message.heightChangeAnimationDuration = 0.1
+        if let _ = chat {
+            titleLabel.text = String(format: "%@ %@", chat!["name"] as! String, chat!["surname"] as! String)
+            photoView.image = chat!["photo"] as? UIImage
+        }
+    }
+    
+    internal var chat: [String: NSObject]?
+    
+    @IBAction func sendPressed(sender: AnyObject) {
     }
     
     func keyboardWillShow(sender: NSNotification) {
         if let keyboardSize = (sender.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.keyboardHeight1?.constant = 5 + keyboardSize.height
-            self.keyboardHeight2?.constant = 5 + keyboardSize.height
-            self.keyboardHeight3?.constant = 5 + keyboardSize.height
+            self.keyboardHeight1?.constant = keyboardSize.height
+            self.keyboardHeight2?.constant = keyboardSize.height
+            self.keyboardHeight3?.constant = keyboardSize.height
             UIView.animateWithDuration(0) {
                 self.view.layoutIfNeeded()
             }
@@ -49,9 +61,9 @@ class ChatViewController: UIViewController, UITextViewDelegate {
     
     func keyboardWillHide(sender: NSNotification) {
         if let _ = (sender.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.keyboardHeight1?.constant = 5
-            self.keyboardHeight2?.constant = 5
-            self.keyboardHeight3?.constant = 5
+            self.keyboardHeight1?.constant = 0
+            self.keyboardHeight2?.constant = 0
+            self.keyboardHeight3?.constant = 0
             UIView.animateWithDuration(0) {
                 self.view.layoutIfNeeded()
             }

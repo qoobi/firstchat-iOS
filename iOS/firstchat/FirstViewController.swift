@@ -42,7 +42,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCellWithIdentifier("contactCell")! as! ContactCell
         let contact = sharedConnection.contacts[indexPath.row]
         cell.photo!.image = contact["photo"] as? UIImage
-        NSLog(contact["name"] as! String)
         cell.label!.text = String(format: "%@ %@", contact["name"] as! String, contact["surname"] as! String)
         cell.label!.adjustsFontSizeToFitWidth = true
         return cell

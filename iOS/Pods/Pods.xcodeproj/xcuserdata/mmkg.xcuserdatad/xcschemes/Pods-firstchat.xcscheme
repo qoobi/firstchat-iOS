@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,10 +15,10 @@
             hideIssues = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A68CAB5D1C8035FF00C87911"
-               BuildableName = "firstchat.app"
-               BlueprintName = "firstchat"
-               ReferencedContainer = "container:firstchat.xcodeproj">
+               BlueprintIdentifier = "B01C733DD750D85DBB394C2F7F6B08D3"
+               BuildableName = "Pods_firstchat.framework"
+               BlueprintName = "Pods-firstchat"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A68CAB5D1C8035FF00C87911"
-            BuildableName = "firstchat.app"
-            BlueprintName = "firstchat"
-            ReferencedContainer = "container:firstchat.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -52,16 +43,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A68CAB5D1C8035FF00C87911"
-            BuildableName = "firstchat.app"
-            BlueprintName = "firstchat"
-            ReferencedContainer = "container:firstchat.xcodeproj">
+            BlueprintIdentifier = "B01C733DD750D85DBB394C2F7F6B08D3"
+            BuildableName = "Pods_firstchat.framework"
+            BlueprintName = "Pods-firstchat"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -71,16 +61,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A68CAB5D1C8035FF00C87911"
-            BuildableName = "firstchat.app"
-            BlueprintName = "firstchat"
-            ReferencedContainer = "container:firstchat.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

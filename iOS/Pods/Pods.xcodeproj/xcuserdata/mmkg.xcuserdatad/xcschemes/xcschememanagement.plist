@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JDStatusBarNotification.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-firstchat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>35FAFEC4CC2C2EBECEE1C9DCC300D424</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3E2E05182CAC229038A78ED9FF77D9BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85C1260351A3CFED49D7B13A75ABD551</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B01C733DD750D85DBB394C2F7F6B08D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F70416DB6A577B70AA9A04C99DD1DFC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

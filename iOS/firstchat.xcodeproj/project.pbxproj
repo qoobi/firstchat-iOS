@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F76F45ABA5AA3D86A18088 /* Pods_firstchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9795C0BDEDA6003CD093E4 /* Pods_firstchat.framework */; };
 		A67595F61C8ADA2900B5ACD3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */; };
 		A6895F411C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */; };
 		A6895F4E1C80C547003B69E3 /* Bitter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F4A1C80C547003B69E3 /* Bitter-Bold.otf */; };
@@ -41,10 +42,19 @@
 		A68CAB6B1C8035FF00C87911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68CAB6A1C8035FF00C87911 /* Assets.xcassets */; };
 		A68CAB6E1C8035FF00C87911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68CAB6C1C8035FF00C87911 /* LaunchScreen.storyboard */; };
 		A68CAB781C80AE9700C87911 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68CAB771C80AE9700C87911 /* SignInViewController.swift */; };
+		A6C548871CA46CCD00D0D2C4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6C5487D1CA46CCD00D0D2C4 /* LICENSE */; };
+		A6C548881CA46CCD00D0D2C4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A6C5487E1CA46CCD00D0D2C4 /* README.md */; };
+		A6C548891CA46CCD00D0D2C4 /* RSKGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C548811CA46CCD00D0D2C4 /* RSKGrowingTextView.swift */; };
+		A6C5488A1CA46CCD00D0D2C4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A6C548831CA46CCD00D0D2C4 /* LICENSE */; };
+		A6C5488B1CA46CCD00D0D2C4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A6C548841CA46CCD00D0D2C4 /* README.md */; };
+		A6C5488C1CA46CCD00D0D2C4 /* RSKPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C548861CA46CCD00D0D2C4 /* RSKPlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13521F6B88540540FF97376D /* Pods-firstchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstchat/Pods-firstchat.release.xcconfig"; sourceTree = "<group>"; };
+		48F0619C5E198E7780298126 /* Pods-firstchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstchat/Pods-firstchat.debug.xcconfig"; sourceTree = "<group>"; };
 		A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A67FBF461CA46A9700796F50 /* RSKPlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSKPlaceholderTextView.framework; path = build/Debug/RSKPlaceholderTextView.framework; sourceTree = "<group>"; };
 		A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		A6895F4A1C80C547003B69E3 /* Bitter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Bold.otf"; sourceTree = "<group>"; };
 		A6895F4B1C80C547003B69E3 /* Bitter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -80,6 +90,14 @@
 		A68CAB6D1C8035FF00C87911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68CAB6F1C8035FF00C87911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68CAB771C80AE9700C87911 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A6C5487D1CA46CCD00D0D2C4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6C5487E1CA46CCD00D0D2C4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A6C548801CA46CCD00D0D2C4 /* RSKGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKGrowingTextView.h; sourceTree = "<group>"; };
+		A6C548811CA46CCD00D0D2C4 /* RSKGrowingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSKGrowingTextView.swift; sourceTree = "<group>"; };
+		A6C548831CA46CCD00D0D2C4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A6C548841CA46CCD00D0D2C4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A6C548861CA46CCD00D0D2C4 /* RSKPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSKPlaceholderTextView.swift; sourceTree = "<group>"; };
+		DD9795C0BDEDA6003CD093E4 /* Pods_firstchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +105,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F76F45ABA5AA3D86A18088 /* Pods_firstchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9386E9D4679C560701F9AE6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48F0619C5E198E7780298126 /* Pods-firstchat.debug.xcconfig */,
+				13521F6B88540540FF97376D /* Pods-firstchat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A68CAB551C8035FF00C87911 = {
 			isa = PBXGroup;
 			children = (
 				A68CAB601C8035FF00C87911 /* firstchat */,
 				A68CAB5F1C8035FF00C87911 /* Products */,
+				9386E9D4679C560701F9AE6A /* Pods */,
+				CA2AC7E77CB2FA02D2C44EEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,8 +177,56 @@
 				A68CAB6A1C8035FF00C87911 /* Assets.xcassets */,
 				A68CAB6C1C8035FF00C87911 /* LaunchScreen.storyboard */,
 				A68CAB6F1C8035FF00C87911 /* Info.plist */,
+				A6C5487C1CA46CCD00D0D2C4 /* RSKGrowingTextView */,
+				A6C548821CA46CCD00D0D2C4 /* RSKPlaceholderTextView */,
 			);
 			path = firstchat;
+			sourceTree = "<group>";
+		};
+		A6C5487C1CA46CCD00D0D2C4 /* RSKGrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A6C5487D1CA46CCD00D0D2C4 /* LICENSE */,
+				A6C5487E1CA46CCD00D0D2C4 /* README.md */,
+				A6C5487F1CA46CCD00D0D2C4 /* RSKGrowingTextView */,
+			);
+			path = RSKGrowingTextView;
+			sourceTree = "<group>";
+		};
+		A6C5487F1CA46CCD00D0D2C4 /* RSKGrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A6C548801CA46CCD00D0D2C4 /* RSKGrowingTextView.h */,
+				A6C548811CA46CCD00D0D2C4 /* RSKGrowingTextView.swift */,
+			);
+			path = RSKGrowingTextView;
+			sourceTree = "<group>";
+		};
+		A6C548821CA46CCD00D0D2C4 /* RSKPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A6C548831CA46CCD00D0D2C4 /* LICENSE */,
+				A6C548841CA46CCD00D0D2C4 /* README.md */,
+				A6C548851CA46CCD00D0D2C4 /* RSKPlaceholderTextView */,
+			);
+			path = RSKPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		A6C548851CA46CCD00D0D2C4 /* RSKPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A6C548861CA46CCD00D0D2C4 /* RSKPlaceholderTextView.swift */,
+			);
+			path = RSKPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		CA2AC7E77CB2FA02D2C44EEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67FBF461CA46A9700796F50 /* RSKPlaceholderTextView.framework */,
+				DD9795C0BDEDA6003CD093E4 /* Pods_firstchat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A68CAB721C8035FF00C87911 /* Build configuration list for PBXNativeTarget "firstchat" */;
 			buildPhases = (
+				6C19237AECBDB0BAE5060527 /* 📦 Check Pods Manifest.lock */,
 				A68CAB5A1C8035FF00C87911 /* Sources */,
 				A68CAB5B1C8035FF00C87911 /* Frameworks */,
 				A68CAB5C1C8035FF00C87911 /* Resources */,
+				7733A605739EECCA63791037 /* 📦 Embed Pods Frameworks */,
+				E49F655A47806CA3CA569AED /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +293,7 @@
 			files = (
 				A6895F731C81A35D003B69E3 /* Lato-Light.ttf in Resources */,
 				A6895F7A1C81A35D003B69E3 /* Lato-Thin.ttf in Resources */,
+				A6C548871CA46CCD00D0D2C4 /* LICENSE in Resources */,
 				A6895F751C81A35D003B69E3 /* Lato-Medium.ttf in Resources */,
 				A6895F701C81A35D003B69E3 /* Lato-Heavy.ttf in Resources */,
 				A6895F511C80C547003B69E3 /* Bitter-Regular.otf in Resources */,
@@ -224,6 +306,7 @@
 				A6895F741C81A35D003B69E3 /* Lato-LightItalic.ttf in Resources */,
 				A6895F791C81A35D003B69E3 /* Lato-SemiboldItalic.ttf in Resources */,
 				A6895F761C81A35D003B69E3 /* Lato-MediumItalic.ttf in Resources */,
+				A6C5488A1CA46CCD00D0D2C4 /* LICENSE in Resources */,
 				A6895F6D1C81A35D003B69E3 /* Lato-BoldItalic.ttf in Resources */,
 				A6895F4E1C80C547003B69E3 /* Bitter-Bold.otf in Resources */,
 				A6895F781C81A35D003B69E3 /* Lato-Semibold.ttf in Resources */,
@@ -240,6 +323,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C19237AECBDB0BAE5060527 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7733A605739EECCA63791037 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstchat/Pods-firstchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E49F655A47806CA3CA569AED /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstchat/Pods-firstchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A68CAB5A1C8035FF00C87911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -247,10 +378,14 @@
 			files = (
 				A68CAB781C80AE9700C87911 /* SignInViewController.swift in Sources */,
 				A6895F571C819E0D003B69E3 /* TabBarController.swift in Sources */,
+				A6C548881CA46CCD00D0D2C4 /* README.md in Sources */,
 				A6895F531C81899B003B69E3 /* Connection.swift in Sources */,
+				A6C548891CA46CCD00D0D2C4 /* RSKGrowingTextView.swift in Sources */,
 				A68CAB661C8035FF00C87911 /* SecondViewController.swift in Sources */,
+				A6C5488B1CA46CCD00D0D2C4 /* README.md in Sources */,
 				A6895F551C819269003B69E3 /* ThirdViewController.swift in Sources */,
 				A68CAB621C8035FF00C87911 /* AppDelegate.swift in Sources */,
+				A6C5488C1CA46CCD00D0D2C4 /* RSKPlaceholderTextView.swift in Sources */,
 				A6895F411C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift in Sources */,
 				A67595F61C8ADA2900B5ACD3 /* ChatViewController.swift in Sources */,
 				A68CAB641C8035FF00C87911 /* FirstViewController.swift in Sources */,
@@ -362,8 +497,13 @@
 		};
 		A68CAB731C8035FF00C87911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F0619C5E198E7780298126 /* Pods-firstchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
 				INFOPLIST_FILE = firstchat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -374,8 +514,13 @@
 		};
 		A68CAB741C8035FF00C87911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13521F6B88540540FF97376D /* Pods-firstchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
 				INFOPLIST_FILE = firstchat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,24 +7,65 @@
 //
 
 import UIKit
+import JDStatusBarNotification
+
+func shakeView(view: UIView) {
+    let shake = CABasicAnimation(keyPath: "position")
+    shake.duration = 0.07
+    shake.repeatCount = 3
+    shake.autoreverses = true
+    shake.fromValue = NSValue(CGPoint: CGPointMake(view.center.x - 5, view.center.y))
+    shake.toValue = NSValue(CGPoint: CGPointMake(view.center.x + 5, view.center.y))
+    view.layer.addAnimation(shake, forKey: "position")
+}
 
 class SignInViewController: UIViewController {
     
+    @IBOutlet weak var logoBottom: NSLayoutConstraint!
     @IBOutlet weak var keyboardHeight: NSLayoutConstraint!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var logo: UIImageView!
     
-    @IBOutlet weak var emailTextField: UITextField!
+    private var step = 1
     
     @IBAction func proceed(sender: AnyObject) {
-        if (sharedConnection.authorize(emailTextField.text!, password: "")) {
-            self.performSegueWithIdentifier("logged in", sender: nil)
-        } else {
-            let animation = CABasicAnimation(keyPath: "position")
-            animation.duration = 0.07
-            animation.repeatCount = 3
-            animation.autoreverses = true
-            animation.fromValue = NSValue(CGPoint: CGPointMake(emailTextField.center.x - 5, emailTextField.center.y))
-            animation.toValue = NSValue(CGPoint: CGPointMake(emailTextField.center.x + 5, emailTextField.center.y))
-            emailTextField.layer.addAnimation(animation, forKey: "position")
+        if step == 1 {
+            if !textField.text!.containsString("@") {
+                shakeView(textField)
+            } else {
+                let textView = UITextView()
+                textView.translatesAutoresizingMaskIntoConstraints = false
+                textView.backgroundColor = .clearColor()
+                textView.textColor = .whiteColor()
+                textView.font = textField.font?.fontWithSize(20)
+                textView.editable = false
+                textView.selectable = false
+                textView.scrollEnabled = false
+                view.addSubview(textView)
+                view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(<=20@1000)-[logo]-(==20@1000)-[textView]-(<=20@1000)-[textField]", options: [], metrics: nil, views: ["logo": logo, "textView": textView, "textField": textField]))
+                view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(==20)-[textView]-(==20)-|", options: [], metrics: nil, views: ["textView": textView]))
+                if logoBottom != nil {
+                    view.removeConstraint(logoBottom)
+                }
+                if sharedConnection.isRegistered(textField.text!) {
+                    textView.text! = self.textField.text! + " is already on firstchat. Your chats from other devices cannot be downloaded due to end-to-end encryption.\nTo sign in enter the 6-digit passcode emailed to you."
+                } else {
+                    textView.text! = "Welcome to firstchat.\nNow enter the 6-digit passcode emailed to " + self.textField.text! + "."
+                }
+                textField.text = ""
+                textField.placeholder = "passcode here"
+                sharedConnection.sendPasscode()
+                UIView.animateWithDuration(0.5) {
+                    self.view.layoutIfNeeded()
+                }
+                step += 1
+            }
+        } else if step == 2 {
+            if !sharedConnection.checkPasscode(textField.text!) {
+                shakeView(textField)
+            } else {
+                performSegueWithIdentifier("logged in", sender: nil)
+            }
         }
     }
     

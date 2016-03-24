@@ -8,10 +8,30 @@
 
 import Foundation
 import UIKit
+import JDStatusBarNotification
 
 let sharedConnection = Connection()
 
 public class Connection {
+    
+    private var userEmail: String?
+    private var correctPasscode: String?
+    
+    public func isRegistered(email: String) -> Bool {
+        userEmail = email
+        return registered.contains(email.lowercaseString)
+    }
+    
+    public func sendPasscode() -> Bool {
+        correctPasscode = String(arc4random_uniform(1000000))
+        JDStatusBarNotification.showWithStatus(correctPasscode, dismissAfter: 5)
+        return true
+    }
+    
+    public func checkPasscode(passcode: String) -> Bool {
+        return passcode == correctPasscode
+    }
+    
     public func authorize(email: String, password: String) -> Bool {
         if (email.lowercaseString == "com@mmkg.me" || email == "") {
             return true
@@ -55,6 +75,8 @@ public class Connection {
             "lastMessage": NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-30000))
         ]
     ]
+    
+    private var registered = ["com@mmkg.me", "1"]
 }
 
 func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
