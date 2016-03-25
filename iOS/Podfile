@@ -1,4 +1,5 @@
 use_frameworks!
 target 'firstchat' do
   pod 'JDStatusBarNotification'
+  pod 'UIColor_Hex_Swift', '~> 2.0'
 end

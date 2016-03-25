@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Bitter-Regular.otf">
@@ -136,8 +137,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-rM-yax">
-                                                    <rect key="frame" x="51" y="-1" width="466.5" height="43.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-rM-yax">
+                                                    <rect key="frame" x="48.5" y="0.5" width="466.5" height="43.5"/>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -205,9 +206,67 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-vJ-CMM">
                                 <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fik-sd-6Om">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fik-sd-6Om">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="495"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="WqZ-XH-n3J" customClass="MessageCell" customModule="firstchat">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="WqZ-XH-n3J" id="MGd-qM-YHv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-bb-W50">
+                                                            <rect key="frame" x="5" y="5" width="3379" height="39"/>
+                                                            <subviews>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-fj-hfr">
+                                                                    <rect key="frame" x="3" y="3" width="3373" height="33"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="nbj-fj-hfr" firstAttribute="leading" secondItem="qxQ-bb-W50" secondAttribute="leading" constant="3" id="4eS-k9-Zuf"/>
+                                                                <constraint firstAttribute="width" priority="900" constant="10" id="8DV-uf-pwm"/>
+                                                                <constraint firstAttribute="trailing" secondItem="nbj-fj-hfr" secondAttribute="trailing" constant="3" id="Fbc-zB-kSL"/>
+                                                                <constraint firstItem="nbj-fj-hfr" firstAttribute="top" secondItem="qxQ-bb-W50" secondAttribute="top" constant="3" id="Po3-pr-s66"/>
+                                                                <constraint firstAttribute="bottom" secondItem="nbj-fj-hfr" secondAttribute="bottom" constant="3" id="UBb-KX-995"/>
+                                                                <constraint firstItem="nbj-fj-hfr" firstAttribute="centerX" secondItem="qxQ-bb-W50" secondAttribute="centerX" id="pZR-S9-CiD"/>
+                                                                <constraint firstItem="nbj-fj-hfr" firstAttribute="centerY" secondItem="qxQ-bb-W50" secondAttribute="centerY" id="xoL-M5-zoX"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="8DV-uf-pwm"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="qxQ-bb-W50" firstAttribute="leading" secondItem="MGd-qM-YHv" secondAttribute="leading" constant="5" id="6YV-u9-DpC"/>
+                                                        <constraint firstItem="qxQ-bb-W50" firstAttribute="top" secondItem="MGd-qM-YHv" secondAttribute="top" constant="5" id="8IT-Ts-xZK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qxQ-bb-W50" secondAttribute="bottom" id="Iax-5T-Vv1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qxQ-bb-W50" secondAttribute="trailing" constant="5" id="ZG9-gO-NFu"/>
+                                                        <constraint firstItem="qxQ-bb-W50" firstAttribute="width" relation="lessThanOrEqual" secondItem="MGd-qM-YHv" secondAttribute="width" multiplier="0.8" id="cqd-9D-jJI"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="leading" destination="6YV-u9-DpC" id="cSH-G5-KLt"/>
+                                                    <outlet property="messageView" destination="qxQ-bb-W50" id="skx-Vu-PGo"/>
+                                                    <outlet property="textView" destination="nbj-fj-hfr" id="N2p-oW-1VM"/>
+                                                    <outlet property="trailing" destination="ZG9-gO-NFu" id="5Cs-Fm-9ei"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="cFn-Om-Ogt" id="fkP-v6-3YZ"/>
+                                            <outlet property="delegate" destination="cFn-Om-Ogt" id="JUp-vc-Mzb"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

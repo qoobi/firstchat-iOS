@@ -12,6 +12,23 @@ import JDStatusBarNotification
 
 let sharedConnection = Connection()
 
+enum Direction {
+    case Incoming
+    case Outgoing
+}
+
+public class Message {
+    internal var text: String?
+    internal var direction: Direction?
+    internal var timestamp: NSDate?
+    
+    init(text: String, direction: Direction, timestamp: NSDate) {
+        self.text      = text
+        self.direction = direction
+        self.timestamp = timestamp
+    }
+}
+
 public class Connection {
     
     private var userEmail: String?
@@ -61,7 +78,7 @@ public class Connection {
         [
             "name": "Lorraine",
             "surname": "Douglas",
-            "id": "1",
+            "id": 1,
             "username": "lorraine",
             "photo": UIImage(imageLiteral: "lorraine"),
             "lastMessage": NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-20000))
@@ -69,13 +86,20 @@ public class Connection {
         [
             "name": "Stephen",
             "surname": "Evans",
-            "id": "2",
+            "id": 2,
             "username": "stephen",
             "photo": UIImage(imageLiteral: "stephen"),
             "lastMessage": NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-30000))
         ]
     ]
     
+    public var messages = [
+        1: [
+            Message(text: "Hi!", direction: .Outgoing, timestamp: NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-10000))),
+            Message(text: "Nulla venenatis dapibus mi, in tempor nunc accumsan et. Maecenas condimentum, odio in consectetur.", direction: .Incoming, timestamp: NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-9000)))
+        ],
+        2: []
+    ]
     private var registered = ["com@mmkg.me", "1"]
 }
 
