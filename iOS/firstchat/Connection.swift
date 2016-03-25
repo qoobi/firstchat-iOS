@@ -22,7 +22,7 @@ public class Message {
     internal var direction: Direction?
     internal var timestamp: NSDate?
     
-    init(text: String, direction: Direction, timestamp: NSDate) {
+    init(text: String, direction: Direction = .Outgoing, timestamp: NSDate = NSDate()) {
         self.text      = text
         self.direction = direction
         self.timestamp = timestamp
@@ -91,15 +91,28 @@ public class Connection {
             "photo": UIImage(imageLiteral: "stephen"),
             "lastMessage": NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-30000))
         ]
-    ]
+    ] {
+        didSet {
+            for table in tables {
+                table.1.reloadData()
+            }
+        }
+    }
     
     public var messages = [
         1: [
             Message(text: "Hi!", direction: .Outgoing, timestamp: NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-10000))),
-            Message(text: "Nulla venenatis dapibus mi, in tempor nunc accumsan et. Maecenas condimentum, odio in consectetur.", direction: .Incoming, timestamp: NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-9000)))
+            Message(text: "Nulla venenatis dapibus mi, in tempor nunc accumsan et. Maecenas condimentum, odio in consectetur.", direction: .Incoming, timestamp: NSDate.init(timeIntervalSinceNow: NSTimeInterval.init(-9000))),
         ],
         2: []
     ]
+    
+    public var tables: [Int: UITableView] = [:]
+    
+    public func sendMessage(message: Message, forId id: Int) {
+        messages[id]?.append(message)
+    }
+    
     private var registered = ["com@mmkg.me", "1"]
 }
 

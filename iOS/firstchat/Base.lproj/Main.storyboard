@@ -210,18 +210,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="495"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="WqZ-XH-n3J" customClass="MessageCell" customModule="firstchat">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="incomingMessageCell" id="WqZ-XH-n3J" customClass="MessageCell" customModule="firstchat">
                                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="WqZ-XH-n3J" id="MGd-qM-YHv">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WqZ-XH-n3J" id="MGd-qM-YHv">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-bb-W50">
-                                                            <rect key="frame" x="5" y="5" width="3379" height="39"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-bb-W50">
+                                                            <rect key="frame" x="5" y="5" width="480" height="39"/>
                                                             <subviews>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-fj-hfr">
-                                                                    <rect key="frame" x="3" y="3" width="3373" height="33"/>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-fj-hfr">
+                                                                    <rect key="frame" x="3" y="3" width="474" height="33"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -247,19 +247,65 @@
                                                         </view>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="qxQ-bb-W50" firstAttribute="leading" secondItem="MGd-qM-YHv" secondAttribute="leading" constant="5" id="6YV-u9-DpC"/>
                                                         <constraint firstItem="qxQ-bb-W50" firstAttribute="top" secondItem="MGd-qM-YHv" secondAttribute="top" constant="5" id="8IT-Ts-xZK"/>
                                                         <constraint firstAttribute="bottom" secondItem="qxQ-bb-W50" secondAttribute="bottom" id="Iax-5T-Vv1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="qxQ-bb-W50" secondAttribute="trailing" constant="5" id="ZG9-gO-NFu"/>
                                                         <constraint firstItem="qxQ-bb-W50" firstAttribute="width" relation="lessThanOrEqual" secondItem="MGd-qM-YHv" secondAttribute="width" multiplier="0.8" id="cqd-9D-jJI"/>
+                                                        <constraint firstItem="qxQ-bb-W50" firstAttribute="leading" secondItem="MGd-qM-YHv" secondAttribute="leading" constant="5" id="or9-3C-0Om"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
-                                                    <outlet property="leading" destination="6YV-u9-DpC" id="cSH-G5-KLt"/>
                                                     <outlet property="messageView" destination="qxQ-bb-W50" id="skx-Vu-PGo"/>
                                                     <outlet property="textView" destination="nbj-fj-hfr" id="N2p-oW-1VM"/>
-                                                    <outlet property="trailing" destination="ZG9-gO-NFu" id="5Cs-Fm-9ei"/>
+                                                </connections>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="outgoingMessageCell" id="Msn-CX-bdZ" customClass="MessageCell" customModule="firstchat">
+                                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Msn-CX-bdZ" id="mr0-1b-XUc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhR-NX-sMx">
+                                                            <rect key="frame" x="115" y="5" width="480" height="39"/>
+                                                            <subviews>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BM2-0Z-3gV">
+                                                                    <rect key="frame" x="3" y="3" width="474" height="33"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="BM2-0Z-3gV" firstAttribute="centerY" secondItem="lhR-NX-sMx" secondAttribute="centerY" id="2fP-qK-loA"/>
+                                                                <constraint firstAttribute="bottom" secondItem="BM2-0Z-3gV" secondAttribute="bottom" constant="3" id="SMn-aP-C1K"/>
+                                                                <constraint firstItem="BM2-0Z-3gV" firstAttribute="centerX" secondItem="lhR-NX-sMx" secondAttribute="centerX" id="d0m-tW-6Mu"/>
+                                                                <constraint firstAttribute="width" priority="900" constant="10" id="lAh-Fg-f2U"/>
+                                                                <constraint firstItem="BM2-0Z-3gV" firstAttribute="top" secondItem="lhR-NX-sMx" secondAttribute="top" constant="3" id="vUt-zs-dLv"/>
+                                                                <constraint firstItem="BM2-0Z-3gV" firstAttribute="leading" secondItem="lhR-NX-sMx" secondAttribute="leading" constant="3" id="vq2-DE-HJN"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BM2-0Z-3gV" secondAttribute="trailing" constant="3" id="z5E-FG-kHk"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="lAh-Fg-f2U"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="lhR-NX-sMx" firstAttribute="top" secondItem="mr0-1b-XUc" secondAttribute="top" constant="5" id="AxJ-J5-hnd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lhR-NX-sMx" secondAttribute="trailing" constant="5" id="M4P-si-odt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="lhR-NX-sMx" secondAttribute="bottom" id="YNB-fO-ZiK"/>
+                                                        <constraint firstItem="lhR-NX-sMx" firstAttribute="width" relation="lessThanOrEqual" secondItem="mr0-1b-XUc" secondAttribute="width" multiplier="0.8" id="sWb-sX-TdC"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="messageView" destination="lhR-NX-sMx" id="Yd9-OD-aSZ"/>
+                                                    <outlet property="textView" destination="BM2-0Z-3gV" id="Mic-Hq-BpI"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -386,6 +432,7 @@
                             <constraint firstItem="cVU-RX-jcu" firstAttribute="top" secondItem="bBo-vJ-CMM" secondAttribute="bottom" id="rXe-oX-U6v"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="imageButton" destination="9MD-S4-4gM" id="sqs-G7-6A0"/>
                         <outlet property="keyboardHeight1" destination="405-xT-lIN" id="vbn-7o-qyQ"/>
@@ -394,6 +441,7 @@
                         <outlet property="message" destination="8sB-Ki-Xpn" id="kBm-Br-nTK"/>
                         <outlet property="photoView" destination="0mp-SG-M2c" id="xgO-M5-fnV"/>
                         <outlet property="sendButton" destination="nUs-Oh-8ss" id="mrm-rF-UG3"/>
+                        <outlet property="tableView" destination="Fik-sd-6Om" id="iCG-4r-BdI"/>
                         <outlet property="titleLabel" destination="4rl-yV-lBU" id="s7C-O2-vCs"/>
                     </connections>
                 </viewController>

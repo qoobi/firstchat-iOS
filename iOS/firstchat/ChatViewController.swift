@@ -12,13 +12,11 @@ import UIColor_Hex_Swift
 class MessageCell: UITableViewCell {
     @IBOutlet weak var messageView: UIView!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var leading: NSLayoutConstraint!
-    @IBOutlet weak var trailing: NSLayoutConstraint!
     
     internal var message: Message? {
         didSet {
             textView.backgroundColor = .clearColor()
-            textView.text = message!.text! 
+            textView.text = message!.text!
             
             messageView.backgroundColor = .clearColor()
             messageView.layer.cornerRadius = 10
@@ -26,12 +24,31 @@ class MessageCell: UITableViewCell {
             messageView.layer.borderWidth = 4
             if message!.direction! == .Incoming {
                 messageView.layer.borderColor = UIColor(rgba: "#0066bf").CGColor
-                leading.active = true
+                /*self.removeConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[messageView]-(==5)-|", options: [], metrics: nil, views: ["messageView": messageView]))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(==5)-[messageView]", options: [], metrics: nil, views: ["messageView": messageView]))
+                self.removeConstraints(messageView.constraints.filter() {
+                    $0.firstItem === messageView || $0.secondItem === messageView
+                    })*/
+                //self.updateConstraints()
+                /*leading.active = true
+                if let _ = trailing {
                 trailing.active = false
+                }*/
             } else {
                 messageView.layer.borderColor = UIColor(rgba: "#48bf00").CGColor
+                /*
+                if let _ = leading {
                 leading.active = false
+                }
+                if let _ = trailing {
                 trailing.active = true
+                }*/
+                /*self.removeConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(==5)-[messageView]", options: [], metrics: nil, views: ["messageView": messageView]))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[messageView]-(==5)-|", options: [], metrics: nil, views: ["messageView": messageView]))
+                self.removeConstraints(messageView.constraints.filter() {
+                    $0.firstItem === messageView || $0.secondItem === messageView
+                    })
+                self.updateConstraints()*/
             }
         }
     }
@@ -47,11 +64,19 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
     @IBOutlet weak var keyboardHeight1: NSLayoutConstraint!
     @IBOutlet weak var keyboardHeight2: NSLayoutConstraint!
     @IBOutlet weak var keyboardHeight3: NSLayoutConstraint!
+    @IBOutlet weak var tableView: UITableView!
     
     internal var chat: [String: NSObject]?
     
     @IBAction func back(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    @IBAction func sendPressed(sender: AnyObject) {
+        sharedConnection.sendMessage(Message(text: message.text!), forId: chat!["id"] as! Int)
+        self.tableView.reloadData()
+        message.text! = ""
     }
     
     override func awakeFromNib() {
@@ -70,10 +95,8 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
         if let _ = chat {
             titleLabel.text = String(format: "%@ %@", chat!["name"] as! String, chat!["surname"] as! String)
             photoView.image = chat!["photo"] as? UIImage
+            sharedConnection.tables[chat!["id"] as! Int] = self.tableView
         }
-    }
-    
-    @IBAction func sendPressed(sender: AnyObject) {
     }
     
     func keyboardWillShow(sender: NSNotification) {
@@ -121,8 +144,10 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("messageCell")! as! MessageCell
-        cell.message = sharedConnection.messages[chat!["id"] as! Int]?[indexPath.row]
+        let message = sharedConnection.messages[chat!["id"] as! Int]?[indexPath.row]
+        let id = (message?.direction == .Incoming ? "incoming" : "outgoing") + "MessageCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(id)! as! MessageCell
+        cell.message = message
         return cell
     }
     
