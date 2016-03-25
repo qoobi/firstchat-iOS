@@ -22,34 +22,7 @@ class MessageCell: UITableViewCell {
             messageView.layer.cornerRadius = 10
             messageView.layer.masksToBounds = true
             messageView.layer.borderWidth = 4
-            if message!.direction! == .Incoming {
-                messageView.layer.borderColor = UIColor(rgba: "#0066bf").CGColor
-                /*self.removeConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[messageView]-(==5)-|", options: [], metrics: nil, views: ["messageView": messageView]))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(==5)-[messageView]", options: [], metrics: nil, views: ["messageView": messageView]))
-                self.removeConstraints(messageView.constraints.filter() {
-                    $0.firstItem === messageView || $0.secondItem === messageView
-                    })*/
-                //self.updateConstraints()
-                /*leading.active = true
-                if let _ = trailing {
-                trailing.active = false
-                }*/
-            } else {
-                messageView.layer.borderColor = UIColor(rgba: "#48bf00").CGColor
-                /*
-                if let _ = leading {
-                leading.active = false
-                }
-                if let _ = trailing {
-                trailing.active = true
-                }*/
-                /*self.removeConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(==5)-[messageView]", options: [], metrics: nil, views: ["messageView": messageView]))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[messageView]-(==5)-|", options: [], metrics: nil, views: ["messageView": messageView]))
-                self.removeConstraints(messageView.constraints.filter() {
-                    $0.firstItem === messageView || $0.secondItem === messageView
-                    })
-                self.updateConstraints()*/
-            }
+            messageView.layer.borderColor = message!.direction! == .Incoming ? UIColor(rgba: "#0066bf").CGColor : UIColor(rgba: "#48bf00").CGColor
         }
     }
 }
@@ -75,7 +48,7 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
     
     @IBAction func sendPressed(sender: AnyObject) {
         sharedConnection.sendMessage(Message(text: message.text!), forId: chat!["id"] as! Int)
-        self.tableView.reloadData()
+        //self.tableView.reloadData()
         message.text! = ""
     }
     

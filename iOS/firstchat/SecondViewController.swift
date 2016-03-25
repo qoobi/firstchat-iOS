@@ -7,27 +7,21 @@
 //
 
 import UIKit
+import DateTools
 
 class ChatCell: UITableViewCell {
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    private var chat: [String: NSObject]?
-    
-    internal func setChat(chat: [String: NSObject]) {
-        photo!.image = chat["photo"] as? UIImage
-        nameLabel!.text = String(format: "%@ %@", chat["name"] as! String, chat["surname"] as! String)
-        nameLabel!.adjustsFontSizeToFitWidth = true
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .NoStyle
-        formatter.timeStyle = .ShortStyle
-        let date = chat["lastMessage"] as! NSDate
-        timeLabel!.text = formatter.stringFromDate(date)
-        nameLabel!.adjustsFontSizeToFitWidth = true
-        self.chat = chat
-    }
-    internal func getChat() -> [String: NSObject]? {
-        return chat
+    internal var chat: [String: NSObject]? {
+        didSet {
+            photo!.image = chat!["photo"] as? UIImage
+            nameLabel!.text = String(format: "%@ %@", chat!["name"] as! String, chat!["surname"] as! String)
+            nameLabel!.adjustsFontSizeToFitWidth = true
+            let date = chat!["lastMessage"] as! NSDate
+            timeLabel!.text = date.timeAgoSinceNow()
+            timeLabel!.adjustsFontSizeToFitWidth = true
+        }
     }
 }
 
@@ -60,7 +54,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        (segue.destinationViewController as! ChatViewController).chat = (sender as! ChatCell).getChat()
+        (segue.destinationViewController as! ChatViewController).chat = (sender as! ChatCell).chat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,7 +63,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("chatCell")! as! ChatCell
-        cell.setChat(sharedConnection.chats[indexPath.row])
+        cell.chat = sharedConnection.chats[indexPath.row]
         return cell
     }
     

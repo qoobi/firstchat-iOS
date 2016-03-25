@@ -15,7 +15,7 @@
             hideIssues = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF70CA556645D9F5C2FCF3CA0E2DD7D5"
+               BlueprintIdentifier = "46346895DBDDCD9CA32ACBD6D862F357"
                BuildableName = "Pods_firstchat.framework"
                BlueprintName = "Pods-firstchat"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -46,7 +46,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FF70CA556645D9F5C2FCF3CA0E2DD7D5"
+            BlueprintIdentifier = "46346895DBDDCD9CA32ACBD6D862F357"
             BuildableName = "Pods_firstchat.framework"
             BlueprintName = "Pods-firstchat"
             ReferencedContainer = "container:Pods.xcodeproj">

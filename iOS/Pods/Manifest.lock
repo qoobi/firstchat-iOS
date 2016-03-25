@@ -1,15 +1,18 @@
 PODS:
+  - DateTools (1.7.0)
   - JDStatusBarNotification (1.5.3)
   - UIColor_Hex_Swift (2.0)
 
 DEPENDENCIES:
+  - DateTools
   - JDStatusBarNotification
   - UIColor_Hex_Swift (~> 2.0)
 
 SPEC CHECKSUMS:
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   JDStatusBarNotification: 29413865af11c862c17180610b0f46a21118b412
   UIColor_Hex_Swift: 07130bb5cc010905acc970609255edf4d80f06c8
 
-PODFILE CHECKSUM: 07a185da610bce2b654f0f73b717d8ead5be7ca2
+PODFILE CHECKSUM: ae580199a3cad7d596c7487205d1ab76d1ab2c94
 
 COCOAPODS: 1.0.0.beta.6

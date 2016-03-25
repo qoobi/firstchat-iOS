@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DateTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JDStatusBarNotification.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC6E02C6DE5A747D53DAC35491AD551E</key>
+		<key>46346895DBDDCD9CA32ACBD6D862F357</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF70CA556645D9F5C2FCF3CA0E2DD7D5</key>
+		<key>96B0061D3BE4158F896E608B40C8CE74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFEDA8059B169E4068B6DCC4D2F0B0E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

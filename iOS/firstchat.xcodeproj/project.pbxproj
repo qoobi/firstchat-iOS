@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50F76F45ABA5AA3D86A18088 /* Pods_firstchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9795C0BDEDA6003CD093E4 /* Pods_firstchat.framework */; };
+		A60E53751CA5AF0300C2D1BA /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E53741CA5AF0300C2D1BA /* ContactViewController.swift */; };
 		A67595F61C8ADA2900B5ACD3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */; };
 		A6895F411C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */; };
 		A6895F4E1C80C547003B69E3 /* Bitter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F4A1C80C547003B69E3 /* Bitter-Bold.otf */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		13521F6B88540540FF97376D /* Pods-firstchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstchat/Pods-firstchat.release.xcconfig"; sourceTree = "<group>"; };
 		48F0619C5E198E7780298126 /* Pods-firstchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstchat/Pods-firstchat.debug.xcconfig"; sourceTree = "<group>"; };
+		A60E53741CA5AF0300C2D1BA /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A67FBF461CA46A9700796F50 /* RSKPlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSKPlaceholderTextView.framework; path = build/Debug/RSKPlaceholderTextView.framework; sourceTree = "<group>"; };
 		A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				A6895F541C819269003B69E3 /* ThirdViewController.swift */,
 				A67595F51C8ADA2900B5ACD3 /* ChatViewController.swift */,
 				A68CAB671C8035FF00C87911 /* Main.storyboard */,
+				A60E53741CA5AF0300C2D1BA /* ContactViewController.swift */,
 				A6895F561C819E0D003B69E3 /* TabBarController.swift */,
 				A6895F521C81899B003B69E3 /* Connection.swift */,
 				A6895F401C80BFE5003B69E3 /* KeyboardLayoutConstraint.swift */,
@@ -378,6 +381,7 @@
 			files = (
 				A68CAB781C80AE9700C87911 /* SignInViewController.swift in Sources */,
 				A6895F571C819E0D003B69E3 /* TabBarController.swift in Sources */,
+				A60E53751CA5AF0300C2D1BA /* ContactViewController.swift in Sources */,
 				A6C548881CA46CCD00D0D2C4 /* README.md in Sources */,
 				A6895F531C81899B003B69E3 /* Connection.swift in Sources */,
 				A6C548891CA46CCD00D0D2C4 /* RSKGrowingTextView.swift in Sources */,

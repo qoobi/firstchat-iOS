@@ -7,93 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01ABEA2DFA03BC022A4293636B6AF4E1 /* Pods-firstchat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AB28993054A195B44CE20BA4A461F1E /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC441979C83F3EA027D6AB1CA79DDB5 /* JDStatusBarStyle.m */; };
-		1AEF6D49E24F330E8C4C17F76DC6323F /* JDStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39240437353E0C291B396F9C6DC2AD80 /* JDStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB28993054A195B44CE20BA4A461F1E /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */; };
+		19D228ED87FF16C882731F1ED7992B4E /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */; };
+		1AEF6D49E24F330E8C4C17F76DC6323F /* JDStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B819943AC7F8B5D68E82098B94886B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		3251F6CA0F7BEAF8D65BF46A92251FDF /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 23652600A52FF2B96CB666C8A3352B17 /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AD7E1861D91BDF0B99DF770C9CA23B0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF9096478C7B408946C4155312FCDB /* UIColorExtension.swift */; };
-		4B7EED9F6C9C68EB6C77D4699279CEDA /* JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1590D7BB62C1B2D8514EBC7CB6ED5CBD /* JDStatusBarNotification-dummy.m */; };
-		61B313646AED09ED50E4F2E1DB6AADB4 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = A54A97B37594D782E81CBB16091E2D5A /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		647BBF46095B92328151F0EF579E6EB5 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6989BCC586DD7D8A8D5880A06847A0C8 /* JDStatusBarView.m */; };
-		90BC7A30F3B1E897C6FB9EC171E14951 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A01C2CE050B92360A29DAA10A69D7D1C /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A382BF97E66F4F7DE64F595AEEB5A343 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8318010794D85DAA1AAB395C315E3B /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD92C92E0483FF326539FF3AB99DD1E9 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E8FEB7BAED64581B5CECB4E0DD0433 /* UIColor_Hex_Swift-dummy.m */; };
+		28960A8BE404D99ABBC7BF2D8A5F90A2 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAF4E8CD18ED10B30CCFB8FF1984A46 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3251F6CA0F7BEAF8D65BF46A92251FDF /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4159C0A759E6090F2C58FCB2492DFB05 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4B7EED9F6C9C68EB6C77D4699279CEDA /* JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */; };
+		4FA8975348D1189640E41DA80B4275DB /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61B313646AED09ED50E4F2E1DB6AADB4 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647BBF46095B92328151F0EF579E6EB5 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */; };
+		668DF03F76CF3D253A29A0D5095E4C54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
+		66D6CA16EF2371E39FAB73473A89D8C1 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A15C9A48AA3F1B9B6C86ABB41774E72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */; };
+		6F00A3D837A718CBC5D7C7157CCF71A2 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		729719BE516B8080199215BB6A52117A /* DateTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7902018FD0635F9A5E4C13BFD67E3750 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */; };
+		7A3C7A5DAEB1C695F060F0248053A1A6 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		801E845E678344633F3972FA4FC16B7C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		87A942595C1C7A1B31044F0160988E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
+		90BC7A30F3B1E897C6FB9EC171E14951 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946B4121912201250487823458430B90 /* Pods-firstchat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */; };
+		9BC7910A61F45206D435065CD0F23BA0 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4A5DE1784D58F0D9AC336BE0A4936C4 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		ADE1FBF9DEAB523604A0EEF559D4AABC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D535ADC5B614C5832BBC04C21A9411A0 /* QuartzCore.framework */; };
-		B2C68AFB71D336EFF6F7E8C677056583 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D29AE60EA14CBDAB4058D8359FC84CC /* JDStatusBarNotification.m */; };
-		D38DC1C4F2622EFB887A07B25B4E5D38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */; };
-		D39F083F87014F21E1412DE79E118638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		D6916168353127EDE9A89D0303B50E26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		D8CB5BFC02FF63BE6B246D19B6502609 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD40160485BF2C514FAFD3A6687E38A /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEB244450F55A830649034A177E7C086 /* Pods-firstchat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */; };
+		AFF4480B4B63FA58209AEC8052207A92 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B2C68AFB71D336EFF6F7E8C677056583 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */; };
+		B4137B6F5B1EF819B8DF88A194F598ED /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C16E0F1A698E02F1D49D4593A71BE38F /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC1CD7BAF05F362DECAA5698D1100896 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796613A0944F366192085448E0D950A /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CD551FA4E972274449696A8373733EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
+		DB98A3AE942FD2DC433B9D013841A9DD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */; };
+		DD710EA2C8E2D3E0917519775D1F571C /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE13D588E52431089F7406353C90A144 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F423AB12C14DA731C42897A3D929D2B8 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75E11F642E1EC3F4503E3DE7349FCCF /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */; };
+		FCA4A97357CE25067ADD5FF43AC01F50 /* Pods-firstchat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7456D2E120A88CBC0C8C58DD1477B591 /* PBXContainerItemProxy */ = {
+		61139BC95D6BEFED9B093599F81DD766 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 35FAFEC4CC2C2EBECEE1C9DCC300D424;
 			remoteInfo = JDStatusBarNotification;
 		};
-		E2EF129251DBBC832299F614F3B9EAFA /* PBXContainerItemProxy */ = {
+		7411AED1CBD6CF0A40DBFF2C69AA89A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC6E02C6DE5A747D53DAC35491AD551E;
+			remoteGlobalIDString = 96B0061D3BE4158F896E608B40C8CE74;
 			remoteInfo = UIColor_Hex_Swift;
+		};
+		9E532A76BF71F5B58F63E434213FC134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFEDA8059B169E4068B6DCC4D2F0B0E9;
+			remoteInfo = DateTools;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02561E3D5AA00EFB792AC14087155863 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		070FF2BF3718196E811AC6654F8C5AC0 /* JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDStatusBarNotification.xcconfig; sourceTree = "<group>"; };
-		0D8318010794D85DAA1AAB395C315E3B /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
+		05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		11B7E2DF934C0799965642E0C1A7B11E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-firstchat-umbrella.h"; sourceTree = "<group>"; };
+		1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
 		151DC39322333193DB98C5573F8E5410 /* Pods-firstchat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firstchat-resources.sh"; sourceTree = "<group>"; };
-		1590D7BB62C1B2D8514EBC7CB6ED5CBD /* JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		16D3B24A7248C225F14E5855D24FF5D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182FD1FC4ECEF050D3CC4CF73A00D978 /* JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
 		1F5A5CC648DF2DF61699E01049495C39 /* Pods-firstchat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-firstchat.modulemap"; sourceTree = "<group>"; };
-		23652600A52FF2B96CB666C8A3352B17 /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
-		2DCEF1607B631D47C67F684F9588622A /* JDStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38108790899EF290A17B65EE0DBFA476 /* JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
-		39240437353E0C291B396F9C6DC2AD80 /* JDStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
-		48E5571B1E3FB9866915A4E2EB1A4DF1 /* Pods_firstchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49968A5B86A329B41F151C21B161F4E6 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDStatusBarNotification.xcconfig; sourceTree = "<group>"; };
+		3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		463C3F2A27D85909FA99F1B921CC6CC1 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
 		4A6F154884B18339BBEB0CC792064711 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
 		4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
 		5EFDD3B2924DECACBB101921779E2181 /* Pods-firstchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firstchat.release.xcconfig"; sourceTree = "<group>"; };
-		604D3CB90674D2C4DEFAE58C6FAE8BB2 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
-		6989BCC586DD7D8A8D5880A06847A0C8 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
-		6DD40160485BF2C514FAFD3A6687E38A /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
-		78E8FEB7BAED64581B5CECB4E0DD0433 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
-		7D29AE60EA14CBDAB4058D8359FC84CC /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
+		629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2202D319AC657F6785E98E10E622F5 /* DateTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DateTools.modulemap; sourceTree = "<group>"; };
+		754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
 		7F1173D0B59E0A6A82BD36488B52D295 /* Pods-firstchat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firstchat-frameworks.sh"; sourceTree = "<group>"; };
-		8CC441979C83F3EA027D6AB1CA79DDB5 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
+		806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-umbrella.h"; sourceTree = "<group>"; };
+		878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8796613A0944F366192085448E0D950A /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9609F2FCB74864F0FEAF6CBD897C1910 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
 		97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-firstchat-dummy.m"; sourceTree = "<group>"; };
-		A01C2CE050B92360A29DAA10A69D7D1C /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
-		A54A97B37594D782E81CBB16091E2D5A /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
+		9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
+		9ED4B79DA9721C336FCECAF946BDA36A /* JDStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JDStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
+		AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
+		AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		ABE7FD3E10208F1033569BEEC61D722C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
+		C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C411CCCC1B0EE5CF3479417B0647B7F7 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firstchat.debug.xcconfig"; sourceTree = "<group>"; };
-		C98EDA6863FFA2AF802A8183B564E74A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9CDE6B8698A9282F19861BF60C66DB /* JDStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JDStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		D3A5962FECA405D88069BA812B3B6E36 /* Pods-firstchat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-firstchat-acknowledgements.plist"; sourceTree = "<group>"; };
 		D535ADC5B614C5832BBC04C21A9411A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		DC9A31CF7120596E5C21C6DD1AC84F33 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE288ED80F41CA0F25CCAF0A9A2C0E85 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
 		DE4167F63636565722E5400056946C02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E0BF9096478C7B408946C4155312FCDB /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
+		F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
+		F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		F72D812FF493B5AE638C34B20869AFC0 /* Pods-firstchat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-firstchat-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		042AE0E36798F670C97CF5EEF4F7BB94 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6916168353127EDE9A89D0303B50E26 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6E834BEB1C4191DAB97A918EBC211B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,18 +144,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F7B0968BDD0245B7797373F76974F26 /* Frameworks */ = {
+		735DEA1D0688D05AABD0F629C5908463 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39F083F87014F21E1412DE79E118638 /* Foundation.framework in Frameworks */,
-				D38DC1C4F2622EFB887A07B25B4E5D38 /* UIKit.framework in Frameworks */,
+				CD551FA4E972274449696A8373733EB9 /* Foundation.framework in Frameworks */,
+				6A15C9A48AA3F1B9B6C86ABB41774E72 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3E4EE401FF71A55AD4FA506F1B7EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668DF03F76CF3D253A29A0D5095E4C54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54566F834ABDEE4FC7403B70EC14AC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A942595C1C7A1B31044F0160988E59 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0435545A5506AC0F1D64ACCF51BFAC29 /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */,
+				AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */,
+				3A214684E71C5BF3C9E542AE8241CD19 /* Support Files */,
+			);
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,18 +190,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14B9FCE8C1C570EC1B10A4742B104DF8 /* JDStatusBarNotification */ = {
+		3A214684E71C5BF3C9E542AE8241CD19 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A54A97B37594D782E81CBB16091E2D5A /* JDStatusBarNotification.h */,
-				7D29AE60EA14CBDAB4058D8359FC84CC /* JDStatusBarNotification.m */,
-				A01C2CE050B92360A29DAA10A69D7D1C /* JDStatusBarStyle.h */,
-				8CC441979C83F3EA027D6AB1CA79DDB5 /* JDStatusBarStyle.m */,
-				23652600A52FF2B96CB666C8A3352B17 /* JDStatusBarView.h */,
-				6989BCC586DD7D8A8D5880A06847A0C8 /* JDStatusBarView.m */,
-				684CBA0E8B46D96B53248D093172E128 /* Support Files */,
+				11B7E2DF934C0799965642E0C1A7B11E /* Info.plist */,
+				C411CCCC1B0EE5CF3479417B0647B7F7 /* UIColor_Hex_Swift.modulemap */,
+				4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */,
+				483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */,
+				DE288ED80F41CA0F25CCAF0A9A2C0E85 /* UIColor_Hex_Swift-prefix.pch */,
+				629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		49511FA209FAB73E28BFDBAF388CD232 /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */,
+				5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */,
+				059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */,
+				F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */,
+				AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */,
+				ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */,
+				D6B82F0BE8C731BE727835F58E7B1004 /* Support Files */,
 			);
 			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		4DFC297462743F841E49DE175266344B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */,
+				878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */,
+				62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */,
+				C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		52C9FA04E5A891D86DE276A3CD05ED4F /* iOS */ = {
@@ -165,18 +257,42 @@
 			path = "Target Support Files/Pods-firstchat";
 			sourceTree = "<group>";
 		};
-		684CBA0E8B46D96B53248D093172E128 /* Support Files */ = {
+		6201F8BFD12452986AEE792824A998B5 /* DateTools */ = {
 			isa = PBXGroup;
 			children = (
-				C98EDA6863FFA2AF802A8183B564E74A /* Info.plist */,
-				CE9CDE6B8698A9282F19861BF60C66DB /* JDStatusBarNotification.modulemap */,
-				070FF2BF3718196E811AC6654F8C5AC0 /* JDStatusBarNotification.xcconfig */,
-				1590D7BB62C1B2D8514EBC7CB6ED5CBD /* JDStatusBarNotification-dummy.m */,
-				38108790899EF290A17B65EE0DBFA476 /* JDStatusBarNotification-prefix.pch */,
-				39240437353E0C291B396F9C6DC2AD80 /* JDStatusBarNotification-umbrella.h */,
+				1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */,
+				5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */,
+				9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */,
+				F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */,
+				8796613A0944F366192085448E0D950A /* DTError.m */,
+				3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */,
+				4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */,
+				754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */,
+				CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */,
+				CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */,
+				C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */,
+				DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */,
+				05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */,
+				F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */,
+				3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */,
+				B249EC9D651F328E1A9DC81C3FAAFB46 /* Resources */,
+				6A85D97DDFC40ADB2BCE48DA7F30B463 /* Support Files */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		6A85D97DDFC40ADB2BCE48DA7F30B463 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F2202D319AC657F6785E98E10E622F5 /* DateTools.modulemap */,
+				088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */,
+				BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */,
+				463C3F2A27D85909FA99F1B921CC6CC1 /* DateTools-prefix.pch */,
+				845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */,
+				ABE7FD3E10208F1033569BEEC61D722C /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JDStatusBarNotification";
+			path = "../Target Support Files/DateTools";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -184,20 +300,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				BDD8EAD976F3AA051F9A712EB0072128 /* Pods */,
-				891930B168F4574A9CD5DB46BBB82104 /* Products */,
+				9695629EE758DED491DCECC405A210B2 /* Pods */,
+				4DFC297462743F841E49DE175266344B /* Products */,
 				89F90026B9F015526C90E06009C92A97 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		891930B168F4574A9CD5DB46BBB82104 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2DCEF1607B631D47C67F684F9588622A /* JDStatusBarNotification.framework */,
-				48E5571B1E3FB9866915A4E2EB1A4DF1 /* Pods_firstchat.framework */,
-				DC9A31CF7120596E5C21C6DD1AC84F33 /* UIColor_Hex_Swift.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		89F90026B9F015526C90E06009C92A97 /* Targets Support Files */ = {
@@ -208,50 +314,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		997F5DCA40A53B28DB836A5F7EBF264E /* UIColor_Hex_Swift */ = {
+		9695629EE758DED491DCECC405A210B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6DD40160485BF2C514FAFD3A6687E38A /* HEXColor.h */,
-				E0BF9096478C7B408946C4155312FCDB /* UIColorExtension.swift */,
-				FEFB5562205325D73FE2543A26515A75 /* Support Files */,
-			);
-			path = UIColor_Hex_Swift;
-			sourceTree = "<group>";
-		};
-		BDD8EAD976F3AA051F9A712EB0072128 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				14B9FCE8C1C570EC1B10A4742B104DF8 /* JDStatusBarNotification */,
-				997F5DCA40A53B28DB836A5F7EBF264E /* UIColor_Hex_Swift */,
+				6201F8BFD12452986AEE792824A998B5 /* DateTools */,
+				49511FA209FAB73E28BFDBAF388CD232 /* JDStatusBarNotification */,
+				0435545A5506AC0F1D64ACCF51BFAC29 /* UIColor_Hex_Swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FEFB5562205325D73FE2543A26515A75 /* Support Files */ = {
+		B249EC9D651F328E1A9DC81C3FAAFB46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				02561E3D5AA00EFB792AC14087155863 /* Info.plist */,
-				49968A5B86A329B41F151C21B161F4E6 /* UIColor_Hex_Swift.modulemap */,
-				9609F2FCB74864F0FEAF6CBD897C1910 /* UIColor_Hex_Swift.xcconfig */,
-				78E8FEB7BAED64581B5CECB4E0DD0433 /* UIColor_Hex_Swift-dummy.m */,
-				604D3CB90674D2C4DEFAE58C6FAE8BB2 /* UIColor_Hex_Swift-prefix.pch */,
-				0D8318010794D85DAA1AAB395C315E3B /* UIColor_Hex_Swift-umbrella.h */,
+				A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D6B82F0BE8C731BE727835F58E7B1004 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16D3B24A7248C225F14E5855D24FF5D6 /* Info.plist */,
+				9ED4B79DA9721C336FCECAF946BDA36A /* JDStatusBarNotification.modulemap */,
+				367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */,
+				91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */,
+				182FD1FC4ECEF050D3CC4CF73A00D978 /* JDStatusBarNotification-prefix.pch */,
+				ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UIColor_Hex_Swift";
+			path = "../Target Support Files/JDStatusBarNotification";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12BF632EBA30B015B341F6186A93BCA0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01ABEA2DFA03BC022A4293636B6AF4E1 /* Pods-firstchat-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4EB4D2126409B5140923A758F8DFADC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,12 +360,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B718E2E2341850964B4C9DF8E61D7354 /* Headers */ = {
+		AB988B45E1D46882096E675B492D68BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8CB5BFC02FF63BE6B246D19B6502609 /* HEXColor.h in Headers */,
-				A382BF97E66F4F7DE64F595AEEB5A343 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+				FCA4A97357CE25067ADD5FF43AC01F50 /* Pods-firstchat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B901B089EC086B025BEE4BC074FBD6E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729719BE516B8080199215BB6A52117A /* DateTools-umbrella.h in Headers */,
+				2DAF4E8CD18ED10B30CCFB8FF1984A46 /* DateTools.h in Headers */,
+				C16E0F1A698E02F1D49D4593A71BE38F /* DTConstants.h in Headers */,
+				B4137B6F5B1EF819B8DF88A194F598ED /* DTError.h in Headers */,
+				9BC7910A61F45206D435065CD0F23BA0 /* DTTimePeriod.h in Headers */,
+				EE13D588E52431089F7406353C90A144 /* DTTimePeriodChain.h in Headers */,
+				F423AB12C14DA731C42897A3D929D2B8 /* DTTimePeriodCollection.h in Headers */,
+				6F00A3D837A718CBC5D7C7157CCF71A2 /* DTTimePeriodGroup.h in Headers */,
+				66D6CA16EF2371E39FAB73473A89D8C1 /* NSDate+DateTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFEF45C426BA681340D884EDCCA3B41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28960A8BE404D99ABBC7BF2D8A5F90A2 /* HEXColor.h in Headers */,
+				4FA8975348D1189640E41DA80B4275DB /* UIColor_Hex_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,16 +410,36 @@
 			);
 			name = JDStatusBarNotification;
 			productName = JDStatusBarNotification;
-			productReference = 2DCEF1607B631D47C67F684F9588622A /* JDStatusBarNotification.framework */;
+			productReference = 878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC6E02C6DE5A747D53DAC35491AD551E /* UIColor_Hex_Swift */ = {
+		46346895DBDDCD9CA32ACBD6D862F357 /* Pods-firstchat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA2DBE1CE8293E2294C7090C61F94DE0 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildConfigurationList = 4F927DDC175B96174E4012CF3371E084 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */;
 			buildPhases = (
-				F1A4AF0D422D6CDC81EAF8F0FB3C5675 /* Sources */,
-				6F7B0968BDD0245B7797373F76974F26 /* Frameworks */,
-				B718E2E2341850964B4C9DF8E61D7354 /* Headers */,
+				C98209B4EE628FB9C050580124886519 /* Sources */,
+				CD3E4EE401FF71A55AD4FA506F1B7EED /* Frameworks */,
+				AB988B45E1D46882096E675B492D68BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				465738E0E33BBBE62481C14DDF1C2F1A /* PBXTargetDependency */,
+				DA9CD28F24C2DBA8C848BABC7B0E281B /* PBXTargetDependency */,
+				B6D6992E43A5A2717189C26614E5D0A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-firstchat";
+			productName = "Pods-firstchat";
+			productReference = 62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40588A466FF88A544B5475485D982255 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				1BFDBA61ADA67286207820A07FA8B8CF /* Sources */,
+				735DEA1D0688D05AABD0F629C5908463 /* Frameworks */,
+				CBFEF45C426BA681340D884EDCCA3B41 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -306,26 +447,25 @@
 			);
 			name = UIColor_Hex_Swift;
 			productName = UIColor_Hex_Swift;
-			productReference = DC9A31CF7120596E5C21C6DD1AC84F33 /* UIColor_Hex_Swift.framework */;
+			productReference = C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF70CA556645D9F5C2FCF3CA0E2DD7D5 /* Pods-firstchat */ = {
+		AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ABE2D5D8E2B45E9CED66078C4673542 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */;
+			buildConfigurationList = B43E01F5BF2588222B5923C17216C970 /* Build configuration list for PBXNativeTarget "DateTools" */;
 			buildPhases = (
-				825915756752D631FE6E3DB3E8D6321E /* Sources */,
-				042AE0E36798F670C97CF5EEF4F7BB94 /* Frameworks */,
-				12BF632EBA30B015B341F6186A93BCA0 /* Headers */,
+				2D273862F0C04804E86D4B60CB956F0C /* Sources */,
+				F54566F834ABDEE4FC7403B70EC14AC7 /* Frameworks */,
+				B901B089EC086B025BEE4BC074FBD6E9 /* Headers */,
+				374638B4AFD8EA70DD2EA7401A5ADDEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6FB02414C9312E40B3652680FA7CC2B /* PBXTargetDependency */,
-				31E302710D289158A75C471530C71DA9 /* PBXTargetDependency */,
 			);
-			name = "Pods-firstchat";
-			productName = "Pods-firstchat";
-			productReference = 48E5571B1E3FB9866915A4E2EB1A4DF1 /* Pods_firstchat.framework */;
+			name = DateTools;
+			productName = DateTools;
+			productReference = 806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -345,23 +485,59 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 891930B168F4574A9CD5DB46BBB82104 /* Products */;
+			productRefGroup = 4DFC297462743F841E49DE175266344B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */,
 				35FAFEC4CC2C2EBECEE1C9DCC300D424 /* JDStatusBarNotification */,
-				FF70CA556645D9F5C2FCF3CA0E2DD7D5 /* Pods-firstchat */,
-				CC6E02C6DE5A747D53DAC35491AD551E /* UIColor_Hex_Swift */,
+				46346895DBDDCD9CA32ACBD6D862F357 /* Pods-firstchat */,
+				96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		374638B4AFD8EA70DD2EA7401A5ADDEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7902018FD0635F9A5E4C13BFD67E3750 /* DateTools.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		825915756752D631FE6E3DB3E8D6321E /* Sources */ = {
+		1BFDBA61ADA67286207820A07FA8B8CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEB244450F55A830649034A177E7C086 /* Pods-firstchat-dummy.m in Sources */,
+				F75E11F642E1EC3F4503E3DE7349FCCF /* UIColor_Hex_Swift-dummy.m in Sources */,
+				DB98A3AE942FD2DC433B9D013841A9DD /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D273862F0C04804E86D4B60CB956F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D228ED87FF16C882731F1ED7992B4E /* DateTools-dummy.m in Sources */,
+				A4A5DE1784D58F0D9AC336BE0A4936C4 /* DTConstants.m in Sources */,
+				CC1CD7BAF05F362DECAA5698D1100896 /* DTError.m in Sources */,
+				4159C0A759E6090F2C58FCB2492DFB05 /* DTTimePeriod.m in Sources */,
+				801E845E678344633F3972FA4FC16B7C /* DTTimePeriodChain.m in Sources */,
+				AFF4480B4B63FA58209AEC8052207A92 /* DTTimePeriodCollection.m in Sources */,
+				DD710EA2C8E2D3E0917519775D1F571C /* DTTimePeriodGroup.m in Sources */,
+				7A3C7A5DAEB1C695F060F0248053A1A6 /* NSDate+DateTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98209B4EE628FB9C050580124886519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946B4121912201250487823458430B90 /* Pods-firstchat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,36 +552,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1A4AF0D422D6CDC81EAF8F0FB3C5675 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD92C92E0483FF326539FF3AB99DD1E9 /* UIColor_Hex_Swift-dummy.m in Sources */,
-				3AD7E1861D91BDF0B99DF770C9CA23B0 /* UIColorExtension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		31E302710D289158A75C471530C71DA9 /* PBXTargetDependency */ = {
+		465738E0E33BBBE62481C14DDF1C2F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTools;
+			target = AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */;
+			targetProxy = 9E532A76BF71F5B58F63E434213FC134 /* PBXContainerItemProxy */;
+		};
+		B6D6992E43A5A2717189C26614E5D0A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UIColor_Hex_Swift;
-			target = CC6E02C6DE5A747D53DAC35491AD551E /* UIColor_Hex_Swift */;
-			targetProxy = E2EF129251DBBC832299F614F3B9EAFA /* PBXContainerItemProxy */;
+			target = 96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */;
+			targetProxy = 7411AED1CBD6CF0A40DBFF2C69AA89A2 /* PBXContainerItemProxy */;
 		};
-		B6FB02414C9312E40B3652680FA7CC2B /* PBXTargetDependency */ = {
+		DA9CD28F24C2DBA8C848BABC7B0E281B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JDStatusBarNotification;
 			target = 35FAFEC4CC2C2EBECEE1C9DCC300D424 /* JDStatusBarNotification */;
-			targetProxy = 7456D2E120A88CBC0C8C58DD1477B591 /* PBXContainerItemProxy */;
+			targetProxy = 61139BC95D6BEFED9B093599F81DD766 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACE68C4F6576E5E8AABF50D1A5FE73B /* Release */ = {
+		060203C167A6C479DF2C2D091B6405F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9609F2FCB74864F0FEAF6CBD897C1910 /* UIColor_Hex_Swift.xcconfig */;
+			baseConfigurationReference = 088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -416,14 +589,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DateTools/DateTools.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = DateTools;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,13 +605,13 @@
 			};
 			name = Release;
 		};
-		13C82B4B3A247D232F0684BF0CC677BE /* Release */ = {
+		1CA02D40595D7E13E30F49545103CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EFDD3B2924DECACBB101921779E2181 /* Pods-firstchat.release.xcconfig */;
+			baseConfigurationReference = C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -451,7 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-firstchat/Pods-firstchat.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -459,15 +632,16 @@
 				PRODUCT_NAME = Pods_firstchat;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		798CF293F42205E5D8ADE1784F8F19FB /* Debug */ = {
+		764CC317F0365D8880C86381DD747E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9609F2FCB74864F0FEAF6CBD897C1910 /* UIColor_Hex_Swift.xcconfig */;
+			baseConfigurationReference = 4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -575,7 +749,7 @@
 		};
 		93A44BEA21F9E92485BD88D0D9A5EC38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 070FF2BF3718196E811AC6654F8C5AC0 /* JDStatusBarNotification.xcconfig */;
+			baseConfigurationReference = 367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -602,13 +776,13 @@
 			};
 			name = Release;
 		};
-		BB952D9ED9B1302D0063CB874FC3316F /* Debug */ = {
+		9BC44962542E144CCC66C57763722F85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */;
+			baseConfigurationReference = 5EFDD3B2924DECACBB101921779E2181 /* Pods-firstchat.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -621,7 +795,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-firstchat/Pods-firstchat.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -629,16 +803,73 @@
 				PRODUCT_NAME = Pods_firstchat;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6799B6594C8C37BB99EFCFF7BD15EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools/DateTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		C8586BAE57DD6051F701721A3687839A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E8F57E4EF20B36AF33A6C76F9392E193 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 070FF2BF3718196E811AC6654F8C5AC0 /* JDStatusBarNotification.xcconfig */;
+			baseConfigurationReference = 367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -686,20 +917,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ABE2D5D8E2B45E9CED66078C4673542 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */ = {
+		40588A466FF88A544B5475485D982255 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB952D9ED9B1302D0063CB874FC3316F /* Debug */,
-				13C82B4B3A247D232F0684BF0CC677BE /* Release */,
+				764CC317F0365D8880C86381DD747E01 /* Debug */,
+				C8586BAE57DD6051F701721A3687839A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA2DBE1CE8293E2294C7090C61F94DE0 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+		4F927DDC175B96174E4012CF3371E084 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				798CF293F42205E5D8ADE1784F8F19FB /* Debug */,
-				0ACE68C4F6576E5E8AABF50D1A5FE73B /* Release */,
+				1CA02D40595D7E13E30F49545103CFA6 /* Debug */,
+				9BC44962542E144CCC66C57763722F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43E01F5BF2588222B5923C17216C970 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6799B6594C8C37BB99EFCFF7BD15EB8 /* Debug */,
+				060203C167A6C479DF2C2D091B6405F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
