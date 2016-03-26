@@ -59,20 +59,41 @@ public class Connection {
     
     public var contacts = [
         [
+            "name": "Mikhail",
+            "surname": "Gilmutdinov",
+            "id": 0,
+            "username": "mmkg",
+            "photo": UIImage(imageLiteral: "nophoto")
+        ],
+        [
             "name": "Lorraine",
             "surname": "Douglas",
-            "id": "1",
+            "id": 1,
             "username": "lorraine",
             "photo": UIImage(imageLiteral: "lorraine")
         ],
         [
             "name": "Stephen",
             "surname": "Evans",
-            "id": "2",
+            "id": 2,
             "username": "stephen",
             "photo": UIImage(imageLiteral: "stephen")
         ]
     ]
+    
+    private var nextId = 3
+    public var newUser: [String: NSObject]? {
+        set {
+            var newValueMutable = newValue!
+            newValueMutable["id"] = nextId
+            nextId += 1
+            newValueMutable["photo"] = UIImage(imageLiteral: "nophoto")
+            contacts.append(newValueMutable)
+        }
+        get {
+            return nil
+        }
+    }
     
     public var chats = [
         [

@@ -25,15 +25,21 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var keyboardHeight: NSLayoutConstraint!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var logo: UIImageView!
+    let textView = UITextView()
     
     private var step = 1
     
+    var registered: Bool?
+    var username: String?
+    var name: String?
+    var surname: String?
+    
     @IBAction func proceed(sender: AnyObject) {
+        
         if step == 1 {
             if !textField.text!.containsString("@") {
                 shakeView(textField)
             } else {
-                let textView = UITextView()
                 textView.translatesAutoresizingMaskIntoConstraints = false
                 textView.backgroundColor = .clearColor()
                 textView.textColor = .whiteColor()
@@ -47,7 +53,8 @@ class SignInViewController: UIViewController {
                 if logoBottom != nil {
                     view.removeConstraint(logoBottom)
                 }
-                if sharedConnection.isRegistered(textField.text!) {
+                registered = sharedConnection.isRegistered(textField.text!)
+                if registered! {
                     textView.text! = self.textField.text! + " is already on firstchat. Your chats from other devices cannot be downloaded due to end-to-end encryption.\nTo sign in enter the 6-digit passcode emailed to you."
                 } else {
                     textView.text! = "Welcome to firstchat.\nNow enter the 6-digit passcode emailed to " + self.textField.text! + "."
@@ -63,7 +70,39 @@ class SignInViewController: UIViewController {
         } else if step == 2 {
             if !sharedConnection.checkPasscode(textField.text!) {
                 shakeView(textField)
+            } else if registered! {
+                performSegueWithIdentifier("logged in", sender: nil)
             } else {
+                textView.text! = "Now choose yourself a memorable username. Other people will use it to find you. You will be able to change it later."
+                textField.text = ""
+                textField.placeholder = "username here"
+                step += 1
+            }
+        } else if step == 3 {
+            // not registered
+            if textField.text!.isEmpty {
+                shakeView(textField)
+                textView.text! = "Now choose yourself a memorable username. Other people will use it to find you. You will be able to change it later. Username cannot be empty."
+            } else {
+                username = textField.text!
+                textView.text! = "Now enter your name and surname. These will be shown to other people."
+                textField.text = ""
+                textField.placeholder = "name and surname"
+                step += 1
+            }
+        } else if step == 4 {
+            if textField.text!.isEmpty {
+                shakeView(textField)
+                textView.text! = "You may enter your name and surname. These will be shown to other people. Name and surname cannot be empty."
+            } else {
+                let fullname = textField.text!.characters.split(" ", maxSplit: 1, allowEmptySlices: false).map(String.init)
+                name = fullname[0]
+                surname = fullname[1]
+                sharedConnection.newUser = [
+                    "name": name!,
+                    "surname": surname!,
+                    "username": username!
+                ]
                 performSegueWithIdentifier("logged in", sender: nil)
             }
         }
