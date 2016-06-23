@@ -19,12 +19,22 @@ class ContactViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func text(sender: AnyObject) {
+        performSegueWithIdentifier("to chat window", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        (segue.destinationViewController as! ChatViewController).contact = self.contact
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if let _ = contact {
-            titleLabel.text = String(format: "%@ %@", contact!["name"] as! String, contact!["surname"] as! String)
-            photoView.image = contact!["photo"] as? UIImage
+            titleLabel.text = String(format: "%@", contact!["email"] as! String)
+            photoView.image = UIImage(imageLiteral: "nophoto")//contact!["photo"] as? UIImage
         }
     }
     

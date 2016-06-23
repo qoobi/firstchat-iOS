@@ -36,6 +36,7 @@
 		A6895F791C81A35D003B69E3 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F671C81A35D003B69E3 /* Lato-SemiboldItalic.ttf */; };
 		A6895F7A1C81A35D003B69E3 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F681C81A35D003B69E3 /* Lato-Thin.ttf */; };
 		A6895F7B1C81A35D003B69E3 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6895F691C81A35D003B69E3 /* Lato-ThinItalic.ttf */; };
+		A68B3E281D1B085E0061EB94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68CAB6F1C8035FF00C87911 /* Info.plist */; };
 		A68CAB621C8035FF00C87911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68CAB611C8035FF00C87911 /* AppDelegate.swift */; };
 		A68CAB641C8035FF00C87911 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68CAB631C8035FF00C87911 /* FirstViewController.swift */; };
 		A68CAB661C8035FF00C87911 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68CAB651C8035FF00C87911 /* SecondViewController.swift */; };
@@ -83,6 +84,8 @@
 		A6895F671C81A35D003B69E3 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		A6895F681C81A35D003B69E3 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		A6895F691C81A35D003B69E3 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A68B3E291D1B24C10061EB94 /* libchilkatIos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libchilkatIos.a; path = "../../../Downloads/chilkat-9.5.0-ios9/lib/libchilkatIos.a"; sourceTree = "<group>"; };
+		A68B3E2D1D1B290A0061EB94 /* firstchat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "firstchat-Bridging-Header.h"; sourceTree = "<group>"; };
 		A68CAB5E1C8035FF00C87911 /* firstchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68CAB611C8035FF00C87911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68CAB631C8035FF00C87911 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 				A68CAB6F1C8035FF00C87911 /* Info.plist */,
 				A6C5487C1CA46CCD00D0D2C4 /* RSKGrowingTextView */,
 				A6C548821CA46CCD00D0D2C4 /* RSKPlaceholderTextView */,
+				A68B3E2D1D1B290A0061EB94 /* firstchat-Bridging-Header.h */,
 			);
 			path = firstchat;
 			sourceTree = "<group>";
@@ -226,6 +230,7 @@
 		CA2AC7E77CB2FA02D2C44EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A68B3E291D1B24C10061EB94 /* libchilkatIos.a */,
 				A67FBF461CA46A9700796F50 /* RSKPlaceholderTextView.framework */,
 				DD9795C0BDEDA6003CD093E4 /* Pods_firstchat.framework */,
 			);
@@ -239,12 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A68CAB721C8035FF00C87911 /* Build configuration list for PBXNativeTarget "firstchat" */;
 			buildPhases = (
-				6C19237AECBDB0BAE5060527 /* 📦 Check Pods Manifest.lock */,
+				6C19237AECBDB0BAE5060527 /* [CP] Check Pods Manifest.lock */,
 				A68CAB5A1C8035FF00C87911 /* Sources */,
 				A68CAB5B1C8035FF00C87911 /* Frameworks */,
 				A68CAB5C1C8035FF00C87911 /* Resources */,
-				7733A605739EECCA63791037 /* 📦 Embed Pods Frameworks */,
-				E49F655A47806CA3CA569AED /* 📦 Copy Pods Resources */,
+				7733A605739EECCA63791037 /* [CP] Embed Pods Frameworks */,
+				E49F655A47806CA3CA569AED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,13 +266,15 @@
 		A68CAB561C8035FF00C87911 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Mikhail Gilmutdinov";
 				TargetAttributes = {
 					A68CAB5D1C8035FF00C87911 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = A72L5K4P73;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -321,20 +328,21 @@
 				A6895F4F1C80C547003B69E3 /* Bitter-BoldItalic.otf in Resources */,
 				A6895F721C81A35D003B69E3 /* Lato-Italic.ttf in Resources */,
 				A68CAB691C8035FF00C87911 /* Main.storyboard in Resources */,
+				A68B3E281D1B085E0061EB94 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6C19237AECBDB0BAE5060527 /* 📦 Check Pods Manifest.lock */ = {
+		6C19237AECBDB0BAE5060527 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,14 +350,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7733A605739EECCA63791037 /* 📦 Embed Pods Frameworks */ = {
+		7733A605739EECCA63791037 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,14 +365,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firstchat/Pods-firstchat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E49F655A47806CA3CA569AED /* 📦 Copy Pods Resources */ = {
+		E49F655A47806CA3CA569AED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +446,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -482,6 +491,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -504,6 +514,9 @@
 			baseConfigurationReference = 48F0619C5E198E7780298126 /* Pods-firstchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug",
@@ -513,6 +526,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mmkg.firstchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "firstchat/firstchat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -521,6 +539,9 @@
 			baseConfigurationReference = 13521F6B88540540FF97376D /* Pods-firstchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug",
@@ -530,6 +551,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.mmkg.firstchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "firstchat/firstchat-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -3,4 +3,7 @@ target 'firstchat' do
   pod 'JDStatusBarNotification'
   pod 'UIColor_Hex_Swift', '~> 2.0'
   pod 'DateTools'
+  pod 'SwiftWebSocket'
+  pod 'SwiftKeychainWrapper'
+  pod 'OpenSSL'
 end

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HpA-1l-JKd">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HpA-1l-JKd">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -22,13 +22,13 @@
             <string>Bitter-Regular</string>
             <string>Bitter-Regular</string>
             <string>Bitter-Regular</string>
+            <string>Bitter-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--contacts-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="firstchat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -84,6 +84,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.33333333329999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="t9S-Ln-9CW" secondAttribute="bottom" id="Yh8-kU-3yX"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="t9S-Ln-9CW" secondAttribute="bottom" id="ac5-0n-rs4"/>
@@ -96,6 +97,9 @@
                                 <exclude reference="Yh8-kU-3yX"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3dV-PJ-Zbs" appends="YES" id="qHQ-3L-SBt"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="contacts" id="acW-dT-cKf">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
@@ -107,6 +111,12 @@
                         <segue destination="sAN-eb-VI9" kind="presentation" identifier="contact detail" id="PB4-6G-JU4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="3dV-PJ-Zbs">
+                    <connections>
+                        <action selector="longPress:" destination="9pv-A4-QxB" id="hcj-jC-aaD"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="750" y="-688"/>
         </scene>
@@ -239,14 +249,39 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VJ-jw-8Bb">
+                                        <rect key="frame" x="547" y="6" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8VJ-jw-8Bb" secondAttribute="height" multiplier="1:1" id="Cov-qM-dj0"/>
+                                            <constraint firstAttribute="width" secondItem="8VJ-jw-8Bb" secondAttribute="height" multiplier="1:1" id="aHk-ah-ipE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Bitter-Regular" family="Bitter" pointSize="18"/>
+                                        <state key="normal" title="text">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="aHk-ah-ipE"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="text:" destination="sAN-eb-VI9" eventType="touchUpInside" id="dCm-RO-XuD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.33333333329999998" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8VJ-jw-8Bb" secondAttribute="trailing" constant="13" id="4aF-uG-P8f"/>
                                     <constraint firstItem="LhD-Fg-sTF" firstAttribute="centerY" secondItem="YDP-tc-EGq" secondAttribute="centerY" id="4lq-sh-rVM"/>
+                                    <constraint firstItem="8VJ-jw-8Bb" firstAttribute="leading" secondItem="K7r-X7-hO5" secondAttribute="trailing" constant="-3" id="7R2-6S-R9N"/>
                                     <constraint firstAttribute="height" constant="50" id="9nd-Yn-hpr"/>
                                     <constraint firstItem="LhD-Fg-sTF" firstAttribute="top" secondItem="YDP-tc-EGq" secondAttribute="top" constant="5" id="ES0-lI-Rv5"/>
+                                    <constraint firstAttribute="bottom" secondItem="8VJ-jw-8Bb" secondAttribute="bottom" constant="4" id="J8y-2D-OCY"/>
                                     <constraint firstItem="LhD-Fg-sTF" firstAttribute="leading" secondItem="YDP-tc-EGq" secondAttribute="leading" constant="5" id="P2q-Dn-jEN"/>
+                                    <constraint firstItem="8VJ-jw-8Bb" firstAttribute="width" secondItem="8VJ-jw-8Bb" secondAttribute="height" multiplier="1:1" id="T9e-Bk-vqK"/>
+                                    <constraint firstItem="8VJ-jw-8Bb" firstAttribute="top" secondItem="YDP-tc-EGq" secondAttribute="top" constant="6" id="b9e-q5-Vwf"/>
                                     <constraint firstItem="LhD-Fg-sTF" firstAttribute="height" secondItem="YDP-tc-EGq" secondAttribute="height" multiplier="0.8" id="csw-dC-lTN"/>
+                                    <constraint firstItem="8VJ-jw-8Bb" firstAttribute="centerY" secondItem="YDP-tc-EGq" secondAttribute="centerY" constant="1" id="cwk-lh-duF"/>
                                     <constraint firstItem="K7r-X7-hO5" firstAttribute="leading" secondItem="LhD-Fg-sTF" secondAttribute="trailing" constant="5" id="eMd-G1-rO7"/>
                                     <constraint firstItem="K7r-X7-hO5" firstAttribute="centerY" secondItem="YDP-tc-EGq" secondAttribute="centerY" id="fyH-5x-ZjI"/>
                                     <constraint firstItem="K7r-X7-hO5" firstAttribute="centerX" secondItem="YDP-tc-EGq" secondAttribute="centerX" id="hB4-MW-cFs"/>
@@ -257,6 +292,7 @@
                                     <mask key="constraints">
                                         <exclude reference="csw-dC-lTN"/>
                                         <exclude reference="sjs-fd-Buy"/>
+                                        <exclude reference="T9e-Bk-vqK"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -424,11 +460,15 @@
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Fik-sd-6Om" firstAttribute="top" secondItem="bBo-vJ-CMM" secondAttribute="top" id="28t-NN-PFn"/>
                                     <constraint firstItem="Fik-sd-6Om" firstAttribute="width" secondItem="bBo-vJ-CMM" secondAttribute="width" id="d7X-Zj-pvt"/>
                                     <constraint firstItem="Fik-sd-6Om" firstAttribute="centerX" secondItem="bBo-vJ-CMM" secondAttribute="centerX" id="mIQ-gp-94t"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F5T-vL-Txz" appends="YES" id="dd3-hp-mSx"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MD-S4-4gM">
                                 <rect key="frame" x="0.0" y="565" width="52" height="35"/>
@@ -561,6 +601,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4A-4x-ztw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="F5T-vL-Txz">
+                    <connections>
+                        <action selector="longPress:" destination="cFn-Om-Ogt" id="MP0-Be-EHy"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1599" y="11"/>
         </scene>
@@ -608,7 +653,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="Wdy-pO-gyO">
             <objects>
-                <viewController id="HpA-1l-JKd" customClass="SignInViewController" customModule="firstchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HpA-1l-JKd" customClass="SignInViewController" customModule="firstchat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lG8-mT-f8W"/>
                         <viewControllerLayoutGuide type="bottom" id="x0d-w2-d7W"/>
@@ -699,6 +744,6 @@
         <image name="firstchat" width="420" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JzO-W5-3bY"/>
+        <segue reference="UIf-er-6kf"/>
     </inferredMetricsTieBreakers>
 </document>

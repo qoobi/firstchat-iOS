@@ -7,62 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AB28993054A195B44CE20BA4A461F1E /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */; };
-		19D228ED87FF16C882731F1ED7992B4E /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */; };
-		1AEF6D49E24F330E8C4C17F76DC6323F /* JDStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B819943AC7F8B5D68E82098B94886B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		28960A8BE404D99ABBC7BF2D8A5F90A2 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DAF4E8CD18ED10B30CCFB8FF1984A46 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3251F6CA0F7BEAF8D65BF46A92251FDF /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4159C0A759E6090F2C58FCB2492DFB05 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4B7EED9F6C9C68EB6C77D4699279CEDA /* JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */; };
-		4FA8975348D1189640E41DA80B4275DB /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61B313646AED09ED50E4F2E1DB6AADB4 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		647BBF46095B92328151F0EF579E6EB5 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */; };
-		668DF03F76CF3D253A29A0D5095E4C54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		66D6CA16EF2371E39FAB73473A89D8C1 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A15C9A48AA3F1B9B6C86ABB41774E72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */; };
-		6F00A3D837A718CBC5D7C7157CCF71A2 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		729719BE516B8080199215BB6A52117A /* DateTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7902018FD0635F9A5E4C13BFD67E3750 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */; };
-		7A3C7A5DAEB1C695F060F0248053A1A6 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		801E845E678344633F3972FA4FC16B7C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		87A942595C1C7A1B31044F0160988E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		90BC7A30F3B1E897C6FB9EC171E14951 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		946B4121912201250487823458430B90 /* Pods-firstchat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */; };
-		9BC7910A61F45206D435065CD0F23BA0 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4A5DE1784D58F0D9AC336BE0A4936C4 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ADE1FBF9DEAB523604A0EEF559D4AABC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D535ADC5B614C5832BBC04C21A9411A0 /* QuartzCore.framework */; };
-		AFF4480B4B63FA58209AEC8052207A92 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B2C68AFB71D336EFF6F7E8C677056583 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */; };
-		B4137B6F5B1EF819B8DF88A194F598ED /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C16E0F1A698E02F1D49D4593A71BE38F /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC1CD7BAF05F362DECAA5698D1100896 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796613A0944F366192085448E0D950A /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CD551FA4E972274449696A8373733EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4167F63636565722E5400056946C02 /* Foundation.framework */; };
-		DB98A3AE942FD2DC433B9D013841A9DD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */; };
-		DD710EA2C8E2D3E0917519775D1F571C /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EE13D588E52431089F7406353C90A144 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F423AB12C14DA731C42897A3D929D2B8 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75E11F642E1EC3F4503E3DE7349FCCF /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */; };
-		FCA4A97357CE25067ADD5FF43AC01F50 /* Pods-firstchat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A3D3E14DBD82EEC8B4AADA4723EAD3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		0AB28993054A195B44CE20BA4A461F1E /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A4DF5D518B4A87700C10AAFCAE6A2 /* JDStatusBarStyle.m */; };
+		19D228ED87FF16C882731F1ED7992B4E /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA767273494667B41EC18F7676850E9 /* DateTools-dummy.m */; };
+		1AEF6D49E24F330E8C4C17F76DC6323F /* JDStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E6CA92A1D18D47C86FD1247900FBF3F /* JDStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A10B135AC825204C50A68088898C1A /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D088F11DA54A86B26612F0D33C308AC9 /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A94F80C526F52DD8BE16E67B73F13FF /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA3EB6DA97A55A42DABB1DC852E72 /* SwiftKeychainWrapper-dummy.m */; };
+		2D7C95C4DD844EF366C1079B063F46BB /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6A3FA98567D101F1B91F2F7F32E96A /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAF4E8CD18ED10B30CCFB8FF1984A46 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAA89783F508E3D67BAF67A98E38B74 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C759A2C67C693BB6659906B60C9902 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5516A67A081197B36E1E25C457EA1FC0 /* SwiftWebSocket-dummy.m */; };
+		3251F6CA0F7BEAF8D65BF46A92251FDF /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3468A5317F2391B532762BA1B7FCF484 /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4090630B12C96E89148D4C16DBE0BC8D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C457DC6907E5700959375E7DBBF0D /* UIColorExtension.swift */; };
+		4159C0A759E6090F2C58FCB2492DFB05 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 559411A7E847A2A3D5D42D88D6046FC0 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		44F96460971531D8BCB92F62DA203DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		48EC03D1591FEFC7F2280AE410681813 /* Pods-firstchat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */; };
+		4B7EED9F6C9C68EB6C77D4699279CEDA /* JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F64C90E320287166664BAEE1230962 /* JDStatusBarNotification-dummy.m */; };
+		5637FCA81A43E3267367FDA61806ECB3 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0A50BC1DA084D6A4FC1C7E98541763 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BAD94CA16CFA83A72C2B0D0622AD3E5 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBDFDD4BD3B72088AF86CE3D4807F0C /* KeychainWrapper.swift */; };
+		61B313646AED09ED50E4F2E1DB6AADB4 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EF131A01EE56C99F5E1B4B1F4B6B27 /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647BBF46095B92328151F0EF579E6EB5 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BBAF1BE29DF5DDAB43EA0B192ACC71 /* JDStatusBarView.m */; };
+		66D6CA16EF2371E39FAB73473A89D8C1 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 320243D6B4D918909DEE62A5556DAF8D /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F00A3D837A718CBC5D7C7157CCF71A2 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8AE767B190C3E3959A5185A270B69F /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		729719BE516B8080199215BB6A52117A /* DateTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 960C93F3C381B42329FE023223160E17 /* DateTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7902018FD0635F9A5E4C13BFD67E3750 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BC360DED04304116E13B72C4F7C7FBA /* DateTools.bundle */; };
+		7A3C7A5DAEB1C695F060F0248053A1A6 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC40313005EC84C6D5DEF4CA92EEA /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7ACEF935F9045DD08A6EE54B7AAC9489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		800861E06D2DBBF2FEC781F21D8677B8 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F994E78E228B61A8F4362FBFEF13610B /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		801E845E678344633F3972FA4FC16B7C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5200A6C46AEC6C8E43A91E2B763A92 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		81C156FD1AF2EEF349EE91F0CF0038C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		89064F6D0C39A6CB2EE8627AA9240F7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		90BC7A30F3B1E897C6FB9EC171E14951 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81E5605E5337898C80D6FB5F3B7CBB /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A29BAE0A2988D267E7D9BA0A2E0835F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		9BC7910A61F45206D435065CD0F23BA0 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4A37ED9502905A9A9F6B43FED00C5C /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4A5DE1784D58F0D9AC336BE0A4936C4 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B72F39710B877FE123919D76B2589390 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AFF4480B4B63FA58209AEC8052207A92 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AFC6991F183D84319228D267BFEBD /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B2C68AFB71D336EFF6F7E8C677056583 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B8338648696369A9CA5C57EAFC5E3A /* JDStatusBarNotification.m */; };
+		B4137B6F5B1EF819B8DF88A194F598ED /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 851B44F77BD9D76AE487629355ABD45F /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C16E0F1A698E02F1D49D4593A71BE38F /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6AAE99C4A3BFB599CFB0B166D9EDDA /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3EADAD012C5378FB35291A2A34AA5E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		CC1CD7BAF05F362DECAA5698D1100896 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5794B3AB5FC66556CA395F37A9D616 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D94B12259D072FC04EC1E86BD8780412 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934CA8A15EDA8E3FE9E7FB1089429AD /* WebSocket.swift */; };
+		DD710EA2C8E2D3E0917519775D1F571C /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F57411FC01EEFE28C2FE25FFE72EDA3 /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E3C1314B3E825850525C07406FC2F45D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		EE13D588E52431089F7406353C90A144 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B11D2221ABA6ED9245070ADC0F59EE /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E3EA7DFD0C66A0AA170D5DF5804B1A /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E5F1F3C86BFF6E1E013E1920FECEBA /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F423AB12C14DA731C42897A3D929D2B8 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3C5E001321358F840AA0856D9DB2CC /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE3777754421E2D8F442D4A8F7AE64A3 /* Pods-firstchat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBBEEA2A0D86B726BA84B634B558D0F /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B959D14FF7E3523FC676335E2225A42C /* UIColor_Hex_Swift-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		61139BC95D6BEFED9B093599F81DD766 /* PBXContainerItemProxy */ = {
+		1479C2AFCA94E0FD92DBE10E7B1DE9DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31A36FEC5C69E022C3C89667A8CCECF8;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+		87D0F3E882E38A37432EC4B7C94B7776 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 35FAFEC4CC2C2EBECEE1C9DCC300D424;
 			remoteInfo = JDStatusBarNotification;
 		};
-		7411AED1CBD6CF0A40DBFF2C69AA89A2 /* PBXContainerItemProxy */ = {
+		8BA3603E7A0E9C875822271FC57D9F78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 96B0061D3BE4158F896E608B40C8CE74;
+			remoteGlobalIDString = 0ACE721A717C70056EBB66F9EAA22584;
 			remoteInfo = UIColor_Hex_Swift;
 		};
-		9E532A76BF71F5B58F63E434213FC134 /* PBXContainerItemProxy */ = {
+		A4AC16F842822D7AF68EE14C7FDE68CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AC9ED5D836AE380BBD4E559A521198B;
+			remoteInfo = SwiftWebSocket;
+		};
+		B9B4648B5DE2BBE6F33609C199D63F00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -72,92 +95,202 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
-		05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
-		11B7E2DF934C0799965642E0C1A7B11E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B11D2221ABA6ED9245070ADC0F59EE /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		0428EB059A6349C70CF883CCF683BAF8 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		07B8338648696369A9CA5C57EAFC5E3A /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
+		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		094F1A29F5E0AF6DB274B03D5F6777AB /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		0DC0FC3A98281A6C278F6593E6A5F6D5 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = opensslIncludes/openssl/md4.h; sourceTree = "<group>"; };
+		1145E4167BCF715A321FA7E0098798A4 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = opensslIncludes/openssl/bio.h; sourceTree = "<group>"; };
 		129CD50AEDBD9E158BE6848D9A94D2D2 /* Pods-firstchat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-firstchat-umbrella.h"; sourceTree = "<group>"; };
-		1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		12DD23A8128C4C138ADFAE15FA675EE3 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = opensslIncludes/openssl/pkcs12.h; sourceTree = "<group>"; };
+		144847C068927D642B0AED20BE408E44 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = opensslIncludes/openssl/stack.h; sourceTree = "<group>"; };
 		151DC39322333193DB98C5573F8E5410 /* Pods-firstchat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firstchat-resources.sh"; sourceTree = "<group>"; };
-		16D3B24A7248C225F14E5855D24FF5D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		182FD1FC4ECEF050D3CC4CF73A00D978 /* JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		161C69986972CAD934EF63F5EE039998 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = opensslIncludes/openssl/dsa.h; sourceTree = "<group>"; };
+		175F5508D9C540B3F30FA633D9B1A28D /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = opensslIncludes/openssl/opensslconf.h; sourceTree = "<group>"; };
+		17832758547E50AF07407AE245A77519 /* JDStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JDStatusBarNotification.modulemap; sourceTree = "<group>"; };
+		1BBC58E1EC22DE382A78BAB3706A1B06 /* JDStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9E672E49660CA2060C14A6EE80083E /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = opensslIncludes/openssl/buffer.h; sourceTree = "<group>"; };
+		1E6A3FA98567D101F1B91F2F7F32E96A /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		1F57411FC01EEFE28C2FE25FFE72EDA3 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		1F5A5CC648DF2DF61699E01049495C39 /* Pods-firstchat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-firstchat.modulemap"; sourceTree = "<group>"; };
-		367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDStatusBarNotification.xcconfig; sourceTree = "<group>"; };
-		3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
-		3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
-		463C3F2A27D85909FA99F1B921CC6CC1 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
-		483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
-		4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		20CDC40313005EC84C6D5DEF4CA92EEA /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		21BA8CD575B8097235930D398E0789EB /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = opensslIncludes/openssl/ssl23.h; sourceTree = "<group>"; };
+		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		23F411777B822EE3CBF051A9832D1EBB /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = opensslIncludes/openssl/engine.h; sourceTree = "<group>"; };
+		249641F5C5188464AC64B5FA9FA804BD /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = opensslIncludes/openssl/comp.h; sourceTree = "<group>"; };
+		28F64C90E320287166664BAEE1230962 /* JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		2B9DDD405435E92BA9C71DD4883DD87D /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBDFDD4BD3B72088AF86CE3D4807F0C /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		2DEDCA3D4BD67060B36ADA51A1A50FF7 /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3124292A816A9384844F33DEE783316B /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = opensslIncludes/openssl/evp.h; sourceTree = "<group>"; };
+		317FB198CAFA6E8BE8268DB107B45343 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		320243D6B4D918909DEE62A5556DAF8D /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		3219A2D893DE7C280CBCD33A643D573C /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = opensslIncludes/openssl/asn1.h; sourceTree = "<group>"; };
+		3302568C5459B00E1A95AA6C521B5727 /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		3468A5317F2391B532762BA1B7FCF484 /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
+		36A067ED3C8229A9C849E2630C163811 /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		376C457DC6907E5700959375E7DBBF0D /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		37A23906CBE653354562FD8B70AA8E7D /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
+		390EE09760CEFB397503F079662B0FDC /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = opensslIncludes/openssl/x509.h; sourceTree = "<group>"; };
+		3C924B46807BC2545E2D86483471BE52 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = opensslIncludes/openssl/kssl.h; sourceTree = "<group>"; };
+		3D2A8DEFC415D54DD626286DB41BB8CF /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = opensslIncludes/openssl/hmac.h; sourceTree = "<group>"; };
+		3E54EA61D3156319544227C10C5E5699 /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
+		42C9F0DE8EBB5C010AD40FF17A45A8EB /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = opensslIncludes/openssl/ecdh.h; sourceTree = "<group>"; };
+		46985C53D1E347A1A0BEAFB1EED9470B /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = opensslIncludes/openssl/krb5_asn.h; sourceTree = "<group>"; };
+		4753FD1AD1893B1EEFB08A34417AAE04 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		48AE14FA272561791F8093FFF32347F1 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = opensslIncludes/openssl/seed.h; sourceTree = "<group>"; };
+		4934CA8A15EDA8E3FE9E7FB1089429AD /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		4953CDADB81C9CE7843DC69C4E73DD9A /* JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		49696BA69FAA59E9BA3ECAC074758720 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = opensslIncludes/openssl/x509v3.h; sourceTree = "<group>"; };
 		4A6F154884B18339BBEB0CC792064711 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
-		4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
-		5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
+		4BC360DED04304116E13B72C4F7C7FBA /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		50092917BE55ACDF29C54892399FB292 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = opensslIncludes/openssl/bn.h; sourceTree = "<group>"; };
+		526CA3EB6DA97A55A42DABB1DC852E72 /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		5386CCE7B7E5AEE840EB993C21B18F9B /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = opensslIncludes/openssl/md5.h; sourceTree = "<group>"; };
+		53BBAF1BE29DF5DDAB43EA0B192ACC71 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
+		53D397394197B56A358DD30464491B9C /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = opensslIncludes/openssl/ssl2.h; sourceTree = "<group>"; };
+		5516A67A081197B36E1E25C457EA1FC0 /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
+		55411C53B6C23F6B9FA7B342E7A5451B /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = opensslIncludes/openssl/lhash.h; sourceTree = "<group>"; };
+		559411A7E847A2A3D5D42D88D6046FC0 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		5790A19DB5E78DFBB029A8BD7837282B /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = opensslIncludes/openssl/ripemd.h; sourceTree = "<group>"; };
+		58338CF84FB61404B3675DAD9F1FE40A /* JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDStatusBarNotification.xcconfig; sourceTree = "<group>"; };
+		5A6AAE99C4A3BFB599CFB0B166D9EDDA /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		5A6E6C8555C444AF66020C7A9DF6721A /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = opensslIncludes/openssl/cast.h; sourceTree = "<group>"; };
+		5C81E5605E5337898C80D6FB5F3B7CBB /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
 		5EFDD3B2924DECACBB101921779E2181 /* Pods-firstchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firstchat.release.xcconfig"; sourceTree = "<group>"; };
-		629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
-		62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F2202D319AC657F6785E98E10E622F5 /* DateTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DateTools.modulemap; sourceTree = "<group>"; };
-		754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		5F15020D9632DE0A9E45BB85503A7ECE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6160EA14F7D29978902BD7900A62B9A5 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = opensslIncludes/openssl/pem.h; sourceTree = "<group>"; };
+		629B71CFC5ABEDE20D67D1A4068AC9CC /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = opensslIncludes/openssl/mdc2.h; sourceTree = "<group>"; };
+		66DD8D2D5B04AE1C7C0AA5A2DB24F022 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = opensslIncludes/openssl/ocsp.h; sourceTree = "<group>"; };
+		68259657CD71F8B59742D45621F878A3 /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = opensslIncludes/openssl/pkcs7.h; sourceTree = "<group>"; };
+		684281C4A2D1E802787F7173FFD5C5F6 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = opensslIncludes/openssl/rand.h; sourceTree = "<group>"; };
+		6AA4D311EB28202103B66ADBFE433D6B /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B0A50BC1DA084D6A4FC1C7E98541763 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		6B4A37ED9502905A9A9F6B43FED00C5C /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		7085179CA52CD639A8C63AC516D37689 /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		739029810D190265F653D6AF7CA3C89D /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = opensslIncludes/openssl/pqueue.h; sourceTree = "<group>"; };
+		769A053A3719B5D7A1237E1BD749DE89 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = opensslIncludes/openssl/ssl3.h; sourceTree = "<group>"; };
+		779E24E37E0EFBD24FEB0675AB935174 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = opensslIncludes/openssl/asn1_mac.h; sourceTree = "<group>"; };
+		79D5B2D3CE6975325C42861B74204EA9 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = opensslIncludes/openssl/rc2.h; sourceTree = "<group>"; };
+		7ADE63D36A40A7C391A564A0AE2FA9CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE13F764AB084EC0425453CD9CD92C7 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = opensslIncludes/openssl/ebcdic.h; sourceTree = "<group>"; };
+		7E5AC4A69470FEF6BAD4619A0417EADD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6CA92A1D18D47C86FD1247900FBF3F /* JDStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		7EA767273494667B41EC18F7676850E9 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		7F1173D0B59E0A6A82BD36488B52D295 /* Pods-firstchat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-firstchat-frameworks.sh"; sourceTree = "<group>"; };
-		806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-umbrella.h"; sourceTree = "<group>"; };
-		878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8796613A0944F366192085448E0D950A /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
-		91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		7F1A4DF5D518B4A87700C10AAFCAE6A2 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
+		800D486E2E72B6F743D29FAD08E63E31 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = opensslIncludes/openssl/ts.h; sourceTree = "<group>"; };
+		834EA233C90AD798615D0C9A9AAD30E1 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = opensslIncludes/openssl/pem2.h; sourceTree = "<group>"; };
+		851B44F77BD9D76AE487629355ABD45F /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		86762B69442CCE6D6EDD00DEA895F5CF /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = opensslIncludes/openssl/conf.h; sourceTree = "<group>"; };
+		87E840B373FB7AAB82A0A7708C19D833 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = opensslIncludes/openssl/conf_api.h; sourceTree = "<group>"; };
+		8946658A79129537069D2F00678EEC37 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = opensslIncludes/openssl/dtls1.h; sourceTree = "<group>"; };
+		899578D135F8990FA44E030F060EBDD8 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = opensslIncludes/openssl/cms.h; sourceTree = "<group>"; };
+		8A2BBA51C6DD1AF61BB96E6CB6EA4977 /* DateTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DateTools.modulemap; sourceTree = "<group>"; };
+		8BDEDD3AF6DE880E3B161503A2C59E61 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = opensslIncludes/openssl/e_os2.h; sourceTree = "<group>"; };
+		8C6ECF5FD0AF4B00796C432740B5F28B /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = opensslIncludes/openssl/crypto.h; sourceTree = "<group>"; };
+		8C8AE767B190C3E3959A5185A270B69F /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		8FE3814145264DCA49736F178676E2FF /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = opensslIncludes/openssl/x509_vfy.h; sourceTree = "<group>"; };
+		906A42FEA1F4C9E4A4BD1E0C8773F683 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = opensslIncludes/openssl/symhacks.h; sourceTree = "<group>"; };
+		90B4133E7E6E3F96E064332B3F59E96D /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = opensslIncludes/openssl/aes.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		960C93F3C381B42329FE023223160E17 /* DateTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-umbrella.h"; sourceTree = "<group>"; };
+		9799E812DBDFF422F8A77281E2E96EB5 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = opensslIncludes/openssl/ossl_typ.h; sourceTree = "<group>"; };
 		97E733D681BB6F5EF90D0FBACD30DB32 /* Pods-firstchat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-firstchat-dummy.m"; sourceTree = "<group>"; };
-		9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
-		9ED4B79DA9721C336FCECAF946BDA36A /* JDStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JDStatusBarNotification.modulemap; sourceTree = "<group>"; };
-		A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
-		AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
-		AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
-		ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
-		ABE7FD3E10208F1033569BEEC61D722C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
-		BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
-		C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C411CCCC1B0EE5CF3479417B0647B7F7 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
-		C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		99DD0AC66552905A706ADCB000739E1A /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = opensslIncludes/openssl/rc4.h; sourceTree = "<group>"; };
+		9C4F1A6FCF9BCAE4CA67096551A1CAC9 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = opensslIncludes/openssl/rsa.h; sourceTree = "<group>"; };
+		9D212A94009E0502431C319102327C5C /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = opensslIncludes/openssl/dso.h; sourceTree = "<group>"; };
+		9F0AFC6991F183D84319228D267BFEBD /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		9F5C03C5CF193EE87B696478031E5692 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E5F1F3C86BFF6E1E013E1920FECEBA /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		A5A4AF9C41DE5EB29BE36A6F03E1A3F9 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		A79C836EA2DF395D1BD1DA5A04231F43 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		A7EF131A01EE56C99F5E1B4B1F4B6B27 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
+		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A930111E178A9B6EBD12BF010433E309 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = opensslIncludes/openssl/asn1t.h; sourceTree = "<group>"; };
+		AA343523DF921FC70BC3DD588FDF834D /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = opensslIncludes/openssl/dh.h; sourceTree = "<group>"; };
+		AA6D86E0FD77E1B9333C058CF741226D /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = opensslIncludes/openssl/des.h; sourceTree = "<group>"; };
+		AB41CF7D4809647E4AFA950401948B1A /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
+		ADAA89783F508E3D67BAF67A98E38B74 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		B428DCFD059C58785326AE107CEE6C01 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = opensslIncludes/openssl/ec.h; sourceTree = "<group>"; };
+		B4EE09FD1BC16713835CA8F24CEFAD66 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = opensslIncludes/openssl/objects.h; sourceTree = "<group>"; };
+		B72F39710B877FE123919D76B2589390 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
+		B959D14FF7E3523FC676335E2225A42C /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		BA085B03AEC47DB0ADA384132B5341C6 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = opensslIncludes/openssl/modes.h; sourceTree = "<group>"; };
+		BDFA9D988EAE9E8CDADF03A3CA1CAC16 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
 		C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-firstchat.debug.xcconfig"; sourceTree = "<group>"; };
-		CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
-		CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		C9AD158FC9046DE751AAF7EC15444812 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = opensslIncludes/openssl/idea.h; sourceTree = "<group>"; };
+		CBCA3E263F920F08CA5CBF68A4E751E1 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = opensslIncludes/openssl/cmac.h; sourceTree = "<group>"; };
+		CD5794B3AB5FC66556CA395F37A9D616 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		CDD746F8D5712CEA37262B970BAB771A /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = opensslIncludes/openssl/ui.h; sourceTree = "<group>"; };
+		CE5200A6C46AEC6C8E43A91E2B763A92 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		CFD0ED5720504D1D6D9E8719DAFE41F1 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = opensslIncludes/openssl/whrlpool.h; sourceTree = "<group>"; };
+		D069FBCB151F300D65A94153443662F5 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = opensslIncludes/openssl/srp.h; sourceTree = "<group>"; };
+		D088F11DA54A86B26612F0D33C308AC9 /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
+		D13C816B667FD71AECC8E335894803F3 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = opensslIncludes/openssl/opensslv.h; sourceTree = "<group>"; };
 		D3A5962FECA405D88069BA812B3B6E36 /* Pods-firstchat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-firstchat-acknowledgements.plist"; sourceTree = "<group>"; };
-		D535ADC5B614C5832BBC04C21A9411A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		DE288ED80F41CA0F25CCAF0A9A2C0E85 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
-		DE4167F63636565722E5400056946C02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
-		ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
-		F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
-		F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
-		F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		D468D504B2CCF190A173CA289DE4F06A /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = opensslIncludes/openssl/sha.h; sourceTree = "<group>"; };
+		D4A7D4FB68B6C390FC8AB52DC94D710C /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = opensslIncludes/openssl/txt_db.h; sourceTree = "<group>"; };
+		D5DCE679400DC0491E7D9406CCB2EA21 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = opensslIncludes/openssl/tls1.h; sourceTree = "<group>"; };
+		D5F79391BA6EE4FE0F67E2D280D7457B /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = opensslIncludes/openssl/blowfish.h; sourceTree = "<group>"; };
+		E2F75A4D4D0B1AC365E1D224651E4ABC /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E908563213C783CC40607A8470BFB314 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = opensslIncludes/openssl/camellia.h; sourceTree = "<group>"; };
+		EA303EF34D40BAEBC0EB39F0E52EC597 /* Pods_firstchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7213EB6017A5456DAB33E7F210276A /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = opensslIncludes/openssl/safestack.h; sourceTree = "<group>"; };
+		EB3C8A3924E1F5867FD994023AB73029 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = opensslIncludes/openssl/ui_compat.h; sourceTree = "<group>"; };
+		ED099BA9801E74C360B29124428FA2AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED768D5B49A24CE398ED9BCB6072A806 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = opensslIncludes/openssl/ecdsa.h; sourceTree = "<group>"; };
 		F72D812FF493B5AE638C34B20869AFC0 /* Pods-firstchat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-firstchat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F7AE2E07B5CC434BD0439D044CFBE811 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = opensslIncludes/openssl/des_old.h; sourceTree = "<group>"; };
+		F994E78E228B61A8F4362FBFEF13610B /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		FBB85ED872CD7A00A3AEFB309C0B5507 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = opensslIncludes/openssl/err.h; sourceTree = "<group>"; };
+		FC27C8183F74BC0035680980BF6A310E /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = opensslIncludes/openssl/ssl.h; sourceTree = "<group>"; };
+		FDCC0151F7975E004628605400B050C8 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = opensslIncludes/openssl/obj_mac.h; sourceTree = "<group>"; };
+		FF3C5E001321358F840AA0856D9DB2CC /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		FFF90538EE448FA168249FEDEAA361FD /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = opensslIncludes/openssl/srtp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0280BC680D0CD2B4E129214B54E0A234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F96460971531D8BCB92F62DA203DA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AF19FC656641C55D0AB9E3C0376B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACEF935F9045DD08A6EE54B7AAC9489 /* Foundation.framework in Frameworks */,
+				81C156FD1AF2EEF349EE91F0CF0038C1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47889F536295935C627720937B74CB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A29BAE0A2988D267E7D9BA0A2E0835F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E834BEB1C4191DAB97A918EBC211B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B819943AC7F8B5D68E82098B94886B8 /* Foundation.framework in Frameworks */,
-				ADE1FBF9DEAB523604A0EEF559D4AABC /* QuartzCore.framework in Frameworks */,
+				0A3D3E14DBD82EEC8B4AADA4723EAD3F /* Foundation.framework in Frameworks */,
+				89064F6D0C39A6CB2EE8627AA9240F7E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		735DEA1D0688D05AABD0F629C5908463 /* Frameworks */ = {
+		D2519C35D84FB8C7EECE517410A47F63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD551FA4E972274449696A8373733EB9 /* Foundation.framework in Frameworks */,
-				6A15C9A48AA3F1B9B6C86ABB41774E72 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD3E4EE401FF71A55AD4FA506F1B7EED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668DF03F76CF3D253A29A0D5095E4C54 /* Foundation.framework in Frameworks */,
+				C3EADAD012C5378FB35291A2A34AA5E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,78 +298,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A942595C1C7A1B31044F0160988E59 /* Foundation.framework in Frameworks */,
+				E3C1314B3E825850525C07406FC2F45D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0435545A5506AC0F1D64ACCF51BFAC29 /* UIColor_Hex_Swift */ = {
-			isa = PBXGroup;
-			children = (
-				B82CAC4CBA79D93D34A82142A4663ADC /* HEXColor.h */,
-				AA767BA6D6E687BEF9951BB8511559AC /* UIColorExtension.swift */,
-				3A214684E71C5BF3C9E542AE8241CD19 /* Support Files */,
-			);
-			path = UIColor_Hex_Swift;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52C9FA04E5A891D86DE276A3CD05ED4F /* iOS */,
+				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A214684E71C5BF3C9E542AE8241CD19 /* Support Files */ = {
+		13DEBFE407DD0623BDB45051A8D4F783 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				11B7E2DF934C0799965642E0C1A7B11E /* Info.plist */,
-				C411CCCC1B0EE5CF3479417B0647B7F7 /* UIColor_Hex_Swift.modulemap */,
-				4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */,
-				483C0C3433CF45C1E77AD9C7783E5D44 /* UIColor_Hex_Swift-dummy.m */,
-				DE288ED80F41CA0F25CCAF0A9A2C0E85 /* UIColor_Hex_Swift-prefix.pch */,
-				629BD5CF82C12A84009B862C7EDFE4A8 /* UIColor_Hex_Swift-umbrella.h */,
+				4BC360DED04304116E13B72C4F7C7FBA /* DateTools.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/UIColor_Hex_Swift";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		49511FA209FAB73E28BFDBAF388CD232 /* JDStatusBarNotification */ = {
+		2CCB4B0BB55DCE5F1DF9133BCCCDFDD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A963D9AE187D94B097E14967CF0A1C03 /* JDStatusBarNotification.h */,
-				5BEFE734A39DB9686B9A64787FED88C9 /* JDStatusBarNotification.m */,
-				059BC7C9BEEA204BC5756AE97257A27F /* JDStatusBarStyle.h */,
-				F14AF14ECE99B89661C1D1060209FEFC /* JDStatusBarStyle.m */,
-				AA08704F8955FA0D6135E1C298EBBE0B /* JDStatusBarView.h */,
-				ECD074C75DDD497D8A06B6FE8CD7EEB1 /* JDStatusBarView.m */,
-				D6B82F0BE8C731BE727835F58E7B1004 /* Support Files */,
+				CC3A1A397E05DBD978878C1437986137 /* DateTools */,
+				8FE2BBF5AE5A1B667B08B43FA481ED2C /* JDStatusBarNotification */,
+				A9A9ECFAED35A1C8ABD9B7CB8CD31C59 /* OpenSSL */,
+				AA184C44C57DFA882706664AC4DF1635 /* SwiftKeychainWrapper */,
+				3778158E82861EA1B9857996795FB294 /* SwiftWebSocket */,
+				6B1CA07D90FB3299E69278352B438E41 /* UIColor_Hex_Swift */,
 			);
-			path = JDStatusBarNotification;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		4DFC297462743F841E49DE175266344B /* Products */ = {
+		3778158E82861EA1B9857996795FB294 /* SwiftWebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */,
-				878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */,
-				62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */,
-				C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */,
+				4934CA8A15EDA8E3FE9E7FB1089429AD /* WebSocket.swift */,
+				D4C6533600A38E87E58285B5D9A65E47 /* Support Files */,
 			);
-			name = Products;
+			path = SwiftWebSocket;
 			sourceTree = "<group>";
 		};
-		52C9FA04E5A891D86DE276A3CD05ED4F /* iOS */ = {
+		4814220414F3489A6D0C8E0610235CF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE4167F63636565722E5400056946C02 /* Foundation.framework */,
-				D535ADC5B614C5832BBC04C21A9411A0 /* QuartzCore.framework */,
-				4F7CC788C37999CEDD14708117BEC018 /* UIKit.framework */,
+				A5A4AF9C41DE5EB29BE36A6F03E1A3F9 /* libcrypto.a */,
+				0428EB059A6349C70CF883CCF683BAF8 /* libssl.a */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5C6B4BA149FAD9F484029210B9C99B94 /* Pods-firstchat */ = {
@@ -257,42 +370,14 @@
 			path = "Target Support Files/Pods-firstchat";
 			sourceTree = "<group>";
 		};
-		6201F8BFD12452986AEE792824A998B5 /* DateTools */ = {
+		6B1CA07D90FB3299E69278352B438E41 /* UIColor_Hex_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				1506715DEEBCE61F3D63761BEE68262B /* DateTools.h */,
-				5411E560EC29A89E197FB16285CD71B2 /* DTConstants.h */,
-				9AC8FF51E9590B702CFE9D54118498DA /* DTConstants.m */,
-				F24D1943C07BB4BABAD6DDE762C2865E /* DTError.h */,
-				8796613A0944F366192085448E0D950A /* DTError.m */,
-				3F4BF956E106B811DE1D8629C39333B5 /* DTTimePeriod.h */,
-				4909F016F862F48FF814513CA7A35015 /* DTTimePeriod.m */,
-				754FD66B22108A12BBEDA0A22C2A9BCF /* DTTimePeriodChain.h */,
-				CE19AAA42DA3EA00FF2F58E789FB2D79 /* DTTimePeriodChain.m */,
-				CF2624279EB713A8984BB6D73EE60BFA /* DTTimePeriodCollection.h */,
-				C5AFC40C8FA9D68B971A76EA7EA3EF8E /* DTTimePeriodCollection.m */,
-				DFD740B79A63DB1287ED826E84E7BB42 /* DTTimePeriodGroup.h */,
-				05FE48B32B01E715E21F672DDD1E80CE /* DTTimePeriodGroup.m */,
-				F5DA97987F34C41C44E246CB6D021FD6 /* NSDate+DateTools.h */,
-				3BB52BE2CAF9EA25FBCB874C1A48CA0D /* NSDate+DateTools.m */,
-				B249EC9D651F328E1A9DC81C3FAAFB46 /* Resources */,
-				6A85D97DDFC40ADB2BCE48DA7F30B463 /* Support Files */,
+				6B0A50BC1DA084D6A4FC1C7E98541763 /* HEXColor.h */,
+				376C457DC6907E5700959375E7DBBF0D /* UIColorExtension.swift */,
+				E491B3F20813C8E02E8DC45C473464A2 /* Support Files */,
 			);
-			path = DateTools;
-			sourceTree = "<group>";
-		};
-		6A85D97DDFC40ADB2BCE48DA7F30B463 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6F2202D319AC657F6785E98E10E622F5 /* DateTools.modulemap */,
-				088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */,
-				BA354D6B40F4CA937BC825824170ABED /* DateTools-dummy.m */,
-				463C3F2A27D85909FA99F1B921CC6CC1 /* DateTools-prefix.pch */,
-				845BB169B1F0E016829C1B1495F7387D /* DateTools-umbrella.h */,
-				ABE7FD3E10208F1033569BEEC61D722C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DateTools";
+			path = UIColor_Hex_Swift;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -300,8 +385,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				9695629EE758DED491DCECC405A210B2 /* Pods */,
-				4DFC297462743F841E49DE175266344B /* Products */,
+				2CCB4B0BB55DCE5F1DF9133BCCCDFDD0 /* Pods */,
+				A50CCB82B7AE79AFC76A25433A7CA106 /* Products */,
 				89F90026B9F015526C90E06009C92A97 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -314,41 +399,241 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9695629EE758DED491DCECC405A210B2 /* Pods */ = {
+		8FE2BBF5AE5A1B667B08B43FA481ED2C /* JDStatusBarNotification */ = {
 			isa = PBXGroup;
 			children = (
-				6201F8BFD12452986AEE792824A998B5 /* DateTools */,
-				49511FA209FAB73E28BFDBAF388CD232 /* JDStatusBarNotification */,
-				0435545A5506AC0F1D64ACCF51BFAC29 /* UIColor_Hex_Swift */,
+				A7EF131A01EE56C99F5E1B4B1F4B6B27 /* JDStatusBarNotification.h */,
+				07B8338648696369A9CA5C57EAFC5E3A /* JDStatusBarNotification.m */,
+				5C81E5605E5337898C80D6FB5F3B7CBB /* JDStatusBarStyle.h */,
+				7F1A4DF5D518B4A87700C10AAFCAE6A2 /* JDStatusBarStyle.m */,
+				3468A5317F2391B532762BA1B7FCF484 /* JDStatusBarView.h */,
+				53BBAF1BE29DF5DDAB43EA0B192ACC71 /* JDStatusBarView.m */,
+				95742BDF7E280BE8DF92863BB403ACAA /* Support Files */,
 			);
-			name = Pods;
+			path = JDStatusBarNotification;
 			sourceTree = "<group>";
 		};
-		B249EC9D651F328E1A9DC81C3FAAFB46 /* Resources */ = {
+		95742BDF7E280BE8DF92863BB403ACAA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5D7CF3C55C6FBF1F29908D3E1D6FC80 /* DateTools.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D6B82F0BE8C731BE727835F58E7B1004 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				16D3B24A7248C225F14E5855D24FF5D6 /* Info.plist */,
-				9ED4B79DA9721C336FCECAF946BDA36A /* JDStatusBarNotification.modulemap */,
-				367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */,
-				91921025CA1B826841D04FAE531B8F14 /* JDStatusBarNotification-dummy.m */,
-				182FD1FC4ECEF050D3CC4CF73A00D978 /* JDStatusBarNotification-prefix.pch */,
-				ABD07D3125442300C9D74F0696550907 /* JDStatusBarNotification-umbrella.h */,
+				5F15020D9632DE0A9E45BB85503A7ECE /* Info.plist */,
+				17832758547E50AF07407AE245A77519 /* JDStatusBarNotification.modulemap */,
+				58338CF84FB61404B3675DAD9F1FE40A /* JDStatusBarNotification.xcconfig */,
+				28F64C90E320287166664BAEE1230962 /* JDStatusBarNotification-dummy.m */,
+				4953CDADB81C9CE7843DC69C4E73DD9A /* JDStatusBarNotification-prefix.pch */,
+				7E6CA92A1D18D47C86FD1247900FBF3F /* JDStatusBarNotification-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JDStatusBarNotification";
 			sourceTree = "<group>";
 		};
+		A50CCB82B7AE79AFC76A25433A7CA106 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DEDCA3D4BD67060B36ADA51A1A50FF7 /* DateTools.framework */,
+				1BBC58E1EC22DE382A78BAB3706A1B06 /* JDStatusBarNotification.framework */,
+				EA303EF34D40BAEBC0EB39F0E52EC597 /* Pods_firstchat.framework */,
+				E2F75A4D4D0B1AC365E1D224651E4ABC /* SwiftKeychainWrapper.framework */,
+				6AA4D311EB28202103B66ADBFE433D6B /* SwiftWebSocket.framework */,
+				2B9DDD405435E92BA9C71DD4883DD87D /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A9ECFAED35A1C8ABD9B7CB8CD31C59 /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				90B4133E7E6E3F96E064332B3F59E96D /* aes.h */,
+				3219A2D893DE7C280CBCD33A643D573C /* asn1.h */,
+				779E24E37E0EFBD24FEB0675AB935174 /* asn1_mac.h */,
+				A930111E178A9B6EBD12BF010433E309 /* asn1t.h */,
+				1145E4167BCF715A321FA7E0098798A4 /* bio.h */,
+				D5F79391BA6EE4FE0F67E2D280D7457B /* blowfish.h */,
+				50092917BE55ACDF29C54892399FB292 /* bn.h */,
+				1C9E672E49660CA2060C14A6EE80083E /* buffer.h */,
+				E908563213C783CC40607A8470BFB314 /* camellia.h */,
+				5A6E6C8555C444AF66020C7A9DF6721A /* cast.h */,
+				CBCA3E263F920F08CA5CBF68A4E751E1 /* cmac.h */,
+				899578D135F8990FA44E030F060EBDD8 /* cms.h */,
+				249641F5C5188464AC64B5FA9FA804BD /* comp.h */,
+				86762B69442CCE6D6EDD00DEA895F5CF /* conf.h */,
+				87E840B373FB7AAB82A0A7708C19D833 /* conf_api.h */,
+				8C6ECF5FD0AF4B00796C432740B5F28B /* crypto.h */,
+				AA6D86E0FD77E1B9333C058CF741226D /* des.h */,
+				F7AE2E07B5CC434BD0439D044CFBE811 /* des_old.h */,
+				AA343523DF921FC70BC3DD588FDF834D /* dh.h */,
+				161C69986972CAD934EF63F5EE039998 /* dsa.h */,
+				9D212A94009E0502431C319102327C5C /* dso.h */,
+				8946658A79129537069D2F00678EEC37 /* dtls1.h */,
+				8BDEDD3AF6DE880E3B161503A2C59E61 /* e_os2.h */,
+				7CE13F764AB084EC0425453CD9CD92C7 /* ebcdic.h */,
+				B428DCFD059C58785326AE107CEE6C01 /* ec.h */,
+				42C9F0DE8EBB5C010AD40FF17A45A8EB /* ecdh.h */,
+				ED768D5B49A24CE398ED9BCB6072A806 /* ecdsa.h */,
+				23F411777B822EE3CBF051A9832D1EBB /* engine.h */,
+				FBB85ED872CD7A00A3AEFB309C0B5507 /* err.h */,
+				3124292A816A9384844F33DEE783316B /* evp.h */,
+				3D2A8DEFC415D54DD626286DB41BB8CF /* hmac.h */,
+				C9AD158FC9046DE751AAF7EC15444812 /* idea.h */,
+				46985C53D1E347A1A0BEAFB1EED9470B /* krb5_asn.h */,
+				3C924B46807BC2545E2D86483471BE52 /* kssl.h */,
+				55411C53B6C23F6B9FA7B342E7A5451B /* lhash.h */,
+				0DC0FC3A98281A6C278F6593E6A5F6D5 /* md4.h */,
+				5386CCE7B7E5AEE840EB993C21B18F9B /* md5.h */,
+				629B71CFC5ABEDE20D67D1A4068AC9CC /* mdc2.h */,
+				BA085B03AEC47DB0ADA384132B5341C6 /* modes.h */,
+				FDCC0151F7975E004628605400B050C8 /* obj_mac.h */,
+				B4EE09FD1BC16713835CA8F24CEFAD66 /* objects.h */,
+				66DD8D2D5B04AE1C7C0AA5A2DB24F022 /* ocsp.h */,
+				175F5508D9C540B3F30FA633D9B1A28D /* opensslconf.h */,
+				D13C816B667FD71AECC8E335894803F3 /* opensslv.h */,
+				9799E812DBDFF422F8A77281E2E96EB5 /* ossl_typ.h */,
+				6160EA14F7D29978902BD7900A62B9A5 /* pem.h */,
+				834EA233C90AD798615D0C9A9AAD30E1 /* pem2.h */,
+				12DD23A8128C4C138ADFAE15FA675EE3 /* pkcs12.h */,
+				68259657CD71F8B59742D45621F878A3 /* pkcs7.h */,
+				739029810D190265F653D6AF7CA3C89D /* pqueue.h */,
+				684281C4A2D1E802787F7173FFD5C5F6 /* rand.h */,
+				79D5B2D3CE6975325C42861B74204EA9 /* rc2.h */,
+				99DD0AC66552905A706ADCB000739E1A /* rc4.h */,
+				5790A19DB5E78DFBB029A8BD7837282B /* ripemd.h */,
+				9C4F1A6FCF9BCAE4CA67096551A1CAC9 /* rsa.h */,
+				EA7213EB6017A5456DAB33E7F210276A /* safestack.h */,
+				48AE14FA272561791F8093FFF32347F1 /* seed.h */,
+				D468D504B2CCF190A173CA289DE4F06A /* sha.h */,
+				D069FBCB151F300D65A94153443662F5 /* srp.h */,
+				FFF90538EE448FA168249FEDEAA361FD /* srtp.h */,
+				FC27C8183F74BC0035680980BF6A310E /* ssl.h */,
+				53D397394197B56A358DD30464491B9C /* ssl2.h */,
+				21BA8CD575B8097235930D398E0789EB /* ssl23.h */,
+				769A053A3719B5D7A1237E1BD749DE89 /* ssl3.h */,
+				144847C068927D642B0AED20BE408E44 /* stack.h */,
+				906A42FEA1F4C9E4A4BD1E0C8773F683 /* symhacks.h */,
+				D5DCE679400DC0491E7D9406CCB2EA21 /* tls1.h */,
+				800D486E2E72B6F743D29FAD08E63E31 /* ts.h */,
+				D4A7D4FB68B6C390FC8AB52DC94D710C /* txt_db.h */,
+				CDD746F8D5712CEA37262B970BAB771A /* ui.h */,
+				EB3C8A3924E1F5867FD994023AB73029 /* ui_compat.h */,
+				CFD0ED5720504D1D6D9E8719DAFE41F1 /* whrlpool.h */,
+				390EE09760CEFB397503F079662B0FDC /* x509.h */,
+				8FE3814145264DCA49736F178676E2FF /* x509_vfy.h */,
+				49696BA69FAA59E9BA3ECAC074758720 /* x509v3.h */,
+				4814220414F3489A6D0C8E0610235CF5 /* Frameworks */,
+			);
+			path = OpenSSL;
+			sourceTree = "<group>";
+		};
+		AA184C44C57DFA882706664AC4DF1635 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				2CBDFDD4BD3B72088AF86CE3D4807F0C /* KeychainWrapper.swift */,
+				1E6A3FA98567D101F1B91F2F7F32E96A /* SwiftKeychainWrapper.h */,
+				F8067F2C7699E8783BCFE57569325B62 /* Support Files */,
+			);
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		CC3A1A397E05DBD978878C1437986137 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA89783F508E3D67BAF67A98E38B74 /* DateTools.h */,
+				5A6AAE99C4A3BFB599CFB0B166D9EDDA /* DTConstants.h */,
+				B72F39710B877FE123919D76B2589390 /* DTConstants.m */,
+				851B44F77BD9D76AE487629355ABD45F /* DTError.h */,
+				CD5794B3AB5FC66556CA395F37A9D616 /* DTError.m */,
+				6B4A37ED9502905A9A9F6B43FED00C5C /* DTTimePeriod.h */,
+				559411A7E847A2A3D5D42D88D6046FC0 /* DTTimePeriod.m */,
+				03B11D2221ABA6ED9245070ADC0F59EE /* DTTimePeriodChain.h */,
+				CE5200A6C46AEC6C8E43A91E2B763A92 /* DTTimePeriodChain.m */,
+				FF3C5E001321358F840AA0856D9DB2CC /* DTTimePeriodCollection.h */,
+				9F0AFC6991F183D84319228D267BFEBD /* DTTimePeriodCollection.m */,
+				8C8AE767B190C3E3959A5185A270B69F /* DTTimePeriodGroup.h */,
+				1F57411FC01EEFE28C2FE25FFE72EDA3 /* DTTimePeriodGroup.m */,
+				320243D6B4D918909DEE62A5556DAF8D /* NSDate+DateTools.h */,
+				20CDC40313005EC84C6D5DEF4CA92EEA /* NSDate+DateTools.m */,
+				13DEBFE407DD0623BDB45051A8D4F783 /* Resources */,
+				E9B8CEC546C74744065F3340B71B0461 /* Support Files */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		D4C6533600A38E87E58285B5D9A65E47 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F5C03C5CF193EE87B696478031E5692 /* Info.plist */,
+				37A23906CBE653354562FD8B70AA8E7D /* SwiftWebSocket.modulemap */,
+				AB41CF7D4809647E4AFA950401948B1A /* SwiftWebSocket.xcconfig */,
+				5516A67A081197B36E1E25C457EA1FC0 /* SwiftWebSocket-dummy.m */,
+				3E54EA61D3156319544227C10C5E5699 /* SwiftWebSocket-prefix.pch */,
+				D088F11DA54A86B26612F0D33C308AC9 /* SwiftWebSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftWebSocket";
+			sourceTree = "<group>";
+		};
+		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
+				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
+				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E491B3F20813C8E02E8DC45C473464A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED099BA9801E74C360B29124428FA2AD /* Info.plist */,
+				A79C836EA2DF395D1BD1DA5A04231F43 /* UIColor_Hex_Swift.modulemap */,
+				BDFA9D988EAE9E8CDADF03A3CA1CAC16 /* UIColor_Hex_Swift.xcconfig */,
+				B959D14FF7E3523FC676335E2225A42C /* UIColor_Hex_Swift-dummy.m */,
+				4753FD1AD1893B1EEFB08A34417AAE04 /* UIColor_Hex_Swift-prefix.pch */,
+				F994E78E228B61A8F4362FBFEF13610B /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		E9B8CEC546C74744065F3340B71B0461 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A2BBA51C6DD1AF61BB96E6CB6EA4977 /* DateTools.modulemap */,
+				094F1A29F5E0AF6DB274B03D5F6777AB /* DateTools.xcconfig */,
+				7EA767273494667B41EC18F7676850E9 /* DateTools-dummy.m */,
+				317FB198CAFA6E8BE8268DB107B45343 /* DateTools-prefix.pch */,
+				960C93F3C381B42329FE023223160E17 /* DateTools-umbrella.h */,
+				7E5AC4A69470FEF6BAD4619A0417EADD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTools";
+			sourceTree = "<group>";
+		};
+		F8067F2C7699E8783BCFE57569325B62 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ADE63D36A40A7C391A564A0AE2FA9CF /* Info.plist */,
+				36A067ED3C8229A9C849E2630C163811 /* SwiftKeychainWrapper.modulemap */,
+				7085179CA52CD639A8C63AC516D37689 /* SwiftKeychainWrapper.xcconfig */,
+				526CA3EB6DA97A55A42DABB1DC852E72 /* SwiftKeychainWrapper-dummy.m */,
+				3302568C5459B00E1A95AA6C521B5727 /* SwiftKeychainWrapper-prefix.pch */,
+				A2E5F1F3C86BFF6E1E013E1920FECEBA /* SwiftKeychainWrapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		15530694055BBD01A642AF7260DBB4AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A10B135AC825204C50A68088898C1A /* SwiftWebSocket-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EB4D2126409B5140923A758F8DFADC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,11 +645,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB988B45E1D46882096E675B492D68BD /* Headers */ = {
+		7EEBB605A3B85B8AEABA71C836A6E317 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA4A97357CE25067ADD5FF43AC01F50 /* Pods-firstchat-umbrella.h in Headers */,
+				F0E3EA7DFD0C66A0AA170D5DF5804B1A /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				2D7C95C4DD844EF366C1079B063F46BB /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893ADCCEC62B4F4951AA0E2F03B3512E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5637FCA81A43E3267367FDA61806ECB3 /* HEXColor.h in Headers */,
+				800861E06D2DBBF2FEC781F21D8677B8 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962491BFDD314401F23F15654576AB18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3777754421E2D8F442D4A8F7AE64A3 /* Pods-firstchat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,18 +687,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBFEF45C426BA681340D884EDCCA3B41 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28960A8BE404D99ABBC7BF2D8A5F90A2 /* HEXColor.h in Headers */,
-				4FA8975348D1189640E41DA80B4275DB /* UIColor_Hex_Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0ACE721A717C70056EBB66F9EAA22584 /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470CA874C0E07F1E55B83B3902C29A31 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				1019AB301AF9ECBEEFB9CF43BD4CB2FF /* Sources */,
+				31AF19FC656641C55D0AB9E3C0376B17 /* Frameworks */,
+				893ADCCEC62B4F4951AA0E2F03B3512E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 2B9DDD405435E92BA9C71DD4883DD87D /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31A36FEC5C69E022C3C89667A8CCECF8 /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D72702474F1D02F1CF8368CF2CF058 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				01E53323EE862C40BB6E22DCA5E0807D /* Sources */,
+				D2519C35D84FB8C7EECE517410A47F63 /* Frameworks */,
+				7EEBB605A3B85B8AEABA71C836A6E317 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = E2F75A4D4D0B1AC365E1D224651E4ABC /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		35FAFEC4CC2C2EBECEE1C9DCC300D424 /* JDStatusBarNotification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1044B5180F6E169E5933A2B933285192 /* Build configuration list for PBXNativeTarget "JDStatusBarNotification" */;
@@ -410,44 +738,46 @@
 			);
 			name = JDStatusBarNotification;
 			productName = JDStatusBarNotification;
-			productReference = 878ED4C3DC1A44DBAD67075132D06F61 /* JDStatusBarNotification.framework */;
+			productReference = 1BBC58E1EC22DE382A78BAB3706A1B06 /* JDStatusBarNotification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		46346895DBDDCD9CA32ACBD6D862F357 /* Pods-firstchat */ = {
+		7AC9ED5D836AE380BBD4E559A521198B /* SwiftWebSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F927DDC175B96174E4012CF3371E084 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */;
+			buildConfigurationList = 309A386455FC6448F2763DDCC3B7BB36 /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */;
 			buildPhases = (
-				C98209B4EE628FB9C050580124886519 /* Sources */,
-				CD3E4EE401FF71A55AD4FA506F1B7EED /* Frameworks */,
-				AB988B45E1D46882096E675B492D68BD /* Headers */,
+				A61D098D775CEB7B912A29C82DE7D014 /* Sources */,
+				47889F536295935C627720937B74CB78 /* Frameworks */,
+				15530694055BBD01A642AF7260DBB4AA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				465738E0E33BBBE62481C14DDF1C2F1A /* PBXTargetDependency */,
-				DA9CD28F24C2DBA8C848BABC7B0E281B /* PBXTargetDependency */,
-				B6D6992E43A5A2717189C26614E5D0A0 /* PBXTargetDependency */,
+			);
+			name = SwiftWebSocket;
+			productName = SwiftWebSocket;
+			productReference = 6AA4D311EB28202103B66ADBFE433D6B /* SwiftWebSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C0F47162D3F627DBBE8BA9BC5E8AC45 /* Pods-firstchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E93F8D771E473B69ABB4FE67E745928D /* Build configuration list for PBXNativeTarget "Pods-firstchat" */;
+			buildPhases = (
+				328BC3365A970DA1519807E0710CDB16 /* Sources */,
+				0280BC680D0CD2B4E129214B54E0A234 /* Frameworks */,
+				962491BFDD314401F23F15654576AB18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40FF144EF341D0D534B60D69126E811F /* PBXTargetDependency */,
+				5247860A5820647715CD836BDB4C6AA9 /* PBXTargetDependency */,
+				7F5F2E9302C22AEDF6B329893AAE7A53 /* PBXTargetDependency */,
+				A269E7B9B2A6E9C0F90E68E4CFD50FC5 /* PBXTargetDependency */,
+				A429AEE80FEF4125F94B3CD4CF86A661 /* PBXTargetDependency */,
 			);
 			name = "Pods-firstchat";
 			productName = "Pods-firstchat";
-			productReference = 62D7AABE51D7AE90AFF03A3FDD278EC5 /* Pods_firstchat.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 40588A466FF88A544B5475485D982255 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
-			buildPhases = (
-				1BFDBA61ADA67286207820A07FA8B8CF /* Sources */,
-				735DEA1D0688D05AABD0F629C5908463 /* Frameworks */,
-				CBFEF45C426BA681340D884EDCCA3B41 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UIColor_Hex_Swift;
-			productName = UIColor_Hex_Swift;
-			productReference = C1110421F19665F5AF4F90E3F2592DBF /* UIColor_Hex_Swift.framework */;
+			productReference = EA303EF34D40BAEBC0EB39F0E52EC597 /* Pods_firstchat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */ = {
@@ -465,7 +795,7 @@
 			);
 			name = DateTools;
 			productName = DateTools;
-			productReference = 806B0E9A3C8C709B11B265FEF067685E /* DateTools.framework */;
+			productReference = 2DEDCA3D4BD67060B36ADA51A1A50FF7 /* DateTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -474,8 +804,28 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0ACE721A717C70056EBB66F9EAA22584 = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+					31A36FEC5C69E022C3C89667A8CCECF8 = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+					35FAFEC4CC2C2EBECEE1C9DCC300D424 = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+					7AC9ED5D836AE380BBD4E559A521198B = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+					8C0F47162D3F627DBBE8BA9BC5E8AC45 = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+					AFEDA8059B169E4068B6DCC4D2F0B0E9 = {
+						DevelopmentTeam = A72L5K4P73;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -485,14 +835,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4DFC297462743F841E49DE175266344B /* Products */;
+			productRefGroup = A50CCB82B7AE79AFC76A25433A7CA106 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */,
 				35FAFEC4CC2C2EBECEE1C9DCC300D424 /* JDStatusBarNotification */,
-				46346895DBDDCD9CA32ACBD6D862F357 /* Pods-firstchat */,
-				96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */,
+				8C0F47162D3F627DBBE8BA9BC5E8AC45 /* Pods-firstchat */,
+				31A36FEC5C69E022C3C89667A8CCECF8 /* SwiftKeychainWrapper */,
+				7AC9ED5D836AE380BBD4E559A521198B /* SwiftWebSocket */,
+				0ACE721A717C70056EBB66F9EAA22584 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -509,12 +861,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1BFDBA61ADA67286207820A07FA8B8CF /* Sources */ = {
+		01E53323EE862C40BB6E22DCA5E0807D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75E11F642E1EC3F4503E3DE7349FCCF /* UIColor_Hex_Swift-dummy.m in Sources */,
-				DB98A3AE942FD2DC433B9D013841A9DD /* UIColorExtension.swift in Sources */,
+				5BAD94CA16CFA83A72C2B0D0622AD3E5 /* KeychainWrapper.swift in Sources */,
+				2A94F80C526F52DD8BE16E67B73F13FF /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019AB301AF9ECBEEFB9CF43BD4CB2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBBEEA2A0D86B726BA84B634B558D0F /* UIColor_Hex_Swift-dummy.m in Sources */,
+				4090630B12C96E89148D4C16DBE0BC8D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,11 +894,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C98209B4EE628FB9C050580124886519 /* Sources */ = {
+		328BC3365A970DA1519807E0710CDB16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				946B4121912201250487823458430B90 /* Pods-firstchat-dummy.m in Sources */,
+				48EC03D1591FEFC7F2280AE410681813 /* Pods-firstchat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61D098D775CEB7B912A29C82DE7D014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C759A2C67C693BB6659906B60C9902 /* SwiftWebSocket-dummy.m in Sources */,
+				D94B12259D072FC04EC1E86BD8780412 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,31 +925,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		465738E0E33BBBE62481C14DDF1C2F1A /* PBXTargetDependency */ = {
+		40FF144EF341D0D534B60D69126E811F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DateTools;
 			target = AFEDA8059B169E4068B6DCC4D2F0B0E9 /* DateTools */;
-			targetProxy = 9E532A76BF71F5B58F63E434213FC134 /* PBXContainerItemProxy */;
+			targetProxy = B9B4648B5DE2BBE6F33609C199D63F00 /* PBXContainerItemProxy */;
 		};
-		B6D6992E43A5A2717189C26614E5D0A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIColor_Hex_Swift;
-			target = 96B0061D3BE4158F896E608B40C8CE74 /* UIColor_Hex_Swift */;
-			targetProxy = 7411AED1CBD6CF0A40DBFF2C69AA89A2 /* PBXContainerItemProxy */;
-		};
-		DA9CD28F24C2DBA8C848BABC7B0E281B /* PBXTargetDependency */ = {
+		5247860A5820647715CD836BDB4C6AA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JDStatusBarNotification;
 			target = 35FAFEC4CC2C2EBECEE1C9DCC300D424 /* JDStatusBarNotification */;
-			targetProxy = 61139BC95D6BEFED9B093599F81DD766 /* PBXContainerItemProxy */;
+			targetProxy = 87D0F3E882E38A37432EC4B7C94B7776 /* PBXContainerItemProxy */;
+		};
+		7F5F2E9302C22AEDF6B329893AAE7A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = 31A36FEC5C69E022C3C89667A8CCECF8 /* SwiftKeychainWrapper */;
+			targetProxy = 1479C2AFCA94E0FD92DBE10E7B1DE9DB /* PBXContainerItemProxy */;
+		};
+		A269E7B9B2A6E9C0F90E68E4CFD50FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftWebSocket;
+			target = 7AC9ED5D836AE380BBD4E559A521198B /* SwiftWebSocket */;
+			targetProxy = A4AC16F842822D7AF68EE14C7FDE68CD /* PBXContainerItemProxy */;
+		};
+		A429AEE80FEF4125F94B3CD4CF86A661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 0ACE721A717C70056EBB66F9EAA22584 /* UIColor_Hex_Swift */;
+			targetProxy = 8BA3603E7A0E9C875822271FC57D9F78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		060203C167A6C479DF2C2D091B6405F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */;
+			baseConfigurationReference = 094F1A29F5E0AF6DB274B03D5F6777AB /* DateTools.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -605,10 +988,71 @@
 			};
 			name = Release;
 		};
-		1CA02D40595D7E13E30F49545103CFA6 /* Debug */ = {
+		1767EE4BE33C484858B9DD41DF145953 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */;
+			baseConfigurationReference = BDFA9D988EAE9E8CDADF03A3CA1CAC16 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		243F807335CFC238FB66B9E48013B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7085179CA52CD639A8C63AC516D37689 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D99042C0C951003A92EA4F0BCBD346C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7085179CA52CD639A8C63AC516D37689 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -618,18 +1062,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-firstchat/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-firstchat/Pods-firstchat.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_firstchat;
+				PRODUCT_NAME = SwiftKeychainWrapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -639,10 +1079,11 @@
 			};
 			name = Debug;
 		};
-		764CC317F0365D8880C86381DD747E01 /* Debug */ = {
+		3DF05E3EF628EC3E062230D9D6DF6239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */;
+			baseConfigurationReference = BDFA9D988EAE9E8CDADF03A3CA1CAC16 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -669,47 +1110,11 @@
 			};
 			name = Debug;
 		};
-		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -747,10 +1152,77 @@
 			};
 			name = Debug;
 		};
+		5215735968F36AD4CB9584651FD57F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB41CF7D4809647E4AFA950401948B1A /* SwiftWebSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7625C011D482761AA62E0593C7EFF745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77553C9CB28E3C0862B54112083FA9D /* Pods-firstchat.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-firstchat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-firstchat/Pods-firstchat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_firstchat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		93A44BEA21F9E92485BD88D0D9A5EC38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */;
+			baseConfigurationReference = 58338CF84FB61404B3675DAD9F1FE40A /* JDStatusBarNotification.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -776,10 +1248,11 @@
 			};
 			name = Release;
 		};
-		9BC44962542E144CCC66C57763722F85 /* Release */ = {
+		9A453A4BD98B1E06942178694EE1BD26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EFDD3B2924DECACBB101921779E2181 /* Pods-firstchat.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -811,8 +1284,9 @@
 		};
 		A6799B6594C8C37BB99EFCFF7BD15EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 088716CD6D940A2308239F8DB82B66CE /* DateTools.xcconfig */;
+			baseConfigurationReference = 094F1A29F5E0AF6DB274B03D5F6777AB /* DateTools.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -838,39 +1312,49 @@
 			};
 			name = Debug;
 		};
-		C8586BAE57DD6051F701721A3687839A /* Release */ = {
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C8A19464A4B1A1F6FABE418FD359D99 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E8F57E4EF20B36AF33A6C76F9392E193 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 367AD38E7FBBD4DDA5958D8E97CAFE32 /* JDStatusBarNotification.xcconfig */;
+			baseConfigurationReference = 58338CF84FB61404B3675DAD9F1FE40A /* JDStatusBarNotification.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -896,6 +1380,36 @@
 			};
 			name = Debug;
 		};
+		EEF2775153B3AA4199091B95FB79D100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB41CF7D4809647E4AFA950401948B1A /* SwiftWebSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -911,26 +1425,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				882EB4391EC2E701934974DA86F7343F /* Debug */,
-				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40588A466FF88A544B5475485D982255 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+		309A386455FC6448F2763DDCC3B7BB36 /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				764CC317F0365D8880C86381DD747E01 /* Debug */,
-				C8586BAE57DD6051F701721A3687839A /* Release */,
+				5215735968F36AD4CB9584651FD57F9D /* Debug */,
+				EEF2775153B3AA4199091B95FB79D100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F927DDC175B96174E4012CF3371E084 /* Build configuration list for PBXNativeTarget "Pods-firstchat" */ = {
+		44D72702474F1D02F1CF8368CF2CF058 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CA02D40595D7E13E30F49545103CFA6 /* Debug */,
-				9BC44962542E144CCC66C57763722F85 /* Release */,
+				2D99042C0C951003A92EA4F0BCBD346C /* Debug */,
+				243F807335CFC238FB66B9E48013B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470CA874C0E07F1E55B83B3902C29A31 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF05E3EF628EC3E062230D9D6DF6239 /* Debug */,
+				1767EE4BE33C484858B9DD41DF145953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -940,6 +1463,15 @@
 			buildConfigurations = (
 				A6799B6594C8C37BB99EFCFF7BD15EB8 /* Debug */,
 				060203C167A6C479DF2C2D091B6405F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E93F8D771E473B69ABB4FE67E745928D /* Build configuration list for PBXNativeTarget "Pods-firstchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7625C011D482761AA62E0593C7EFF745 /* Debug */,
+				9A453A4BD98B1E06942178694EE1BD26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

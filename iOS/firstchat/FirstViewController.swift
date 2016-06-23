@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import JDStatusBarNotification
 
 class ContactCell : UITableViewCell {
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var label: UILabel!
     internal var contact: [String: NSObject]? {
         didSet {
-            photo!.image = contact!["photo"] as? UIImage
-            label!.text = String(format: "%@ %@", contact!["name"] as! String, contact!["surname"] as! String)
+            photo!.image = UIImage(imageLiteral: "nophoto")
+            label!.text = String(format: "%@", contact!["email"] as! String)
             label!.adjustsFontSizeToFitWidth = true
         }
     }
 }
 
-
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tbItem: UITabBarItem!
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func longPress(sender: UILongPressGestureRecognizer) {
+        let alert = UIAlertController(title: "Enter email address", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler(nil)
+        let submitAction = UIAlertAction(title: "Add friend", style: .Default) { [unowned alert] (action: UIAlertAction!) in
+            let answer = alert.textFields![0]
+            if let email = answer.text {
+                sharedConnection.addFriend(email)
+            }
+        }
+        
+        alert.addAction(submitAction)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
     
     override func awakeFromNib() {
         tbItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Lato", size: 20)!, NSForegroundColorAttributeName: UIColor.whiteColor()], forState: UIControlState.Normal)
@@ -40,6 +55,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if let selection = tableView.indexPathForSelectedRow {
             tableView.deselectRowAtIndexPath(selection, animated: true)
         }
+        sharedConnection.currentViewController = self
+        sharedConnection.getContacts(self)
     }
     
     override func didReceiveMemoryWarning() {

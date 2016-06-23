@@ -39,17 +39,20 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
     @IBOutlet weak var keyboardHeight3: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     
-    internal var chat: [String: NSObject]?
+    internal var contact: [String: NSObject]?
+    
+    @IBAction func longPress(sender: AnyObject) {
+        self.tableView.reloadData()
+    }
     
     @IBAction func back(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     @IBAction func sendPressed(sender: AnyObject) {
-        sharedConnection.sendMessage(Message(text: message.text!), forId: chat!["id"] as! Int)
-        //self.tableView.reloadData()
+        sharedConnection.sendMessage(Message(text: message.text!), forId: UInt64(contact!["id"]! as! String)!)
         message.text! = ""
+        self.tableView.reloadData()
     }
     
     override func awakeFromNib() {
@@ -59,17 +62,18 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name:UIKeyboardWillHideNotification, object: nil);
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         message.heightChangeAnimationDuration = 0.1
-        if let _ = chat {
+        titleLabel.text = contact!["email"]! as? String
+        photoView.image = UIImage(imageLiteral: "nophoto")
+        /*if let _ = chat {
             titleLabel.text = String(format: "%@ %@", chat!["name"] as! String, chat!["surname"] as! String)
             photoView.image = chat!["photo"] as? UIImage
             sharedConnection.tables[chat!["id"] as! Int] = self.tableView
-        }
+        }*/
     }
     
     func keyboardWillShow(sender: NSNotification) {
@@ -104,20 +108,21 @@ class ChatViewController: UIViewController, UITextViewDelegate, UITableViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        sharedConnection.currentViewController = self
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let _ = chat {
-            if let cnt = sharedConnection.messages[chat!["id"] as! Int]?.count {
-                return cnt
-            } else {
-                return 0
-            }
+        if let c = sharedConnection.messages[UInt64(contact!["id"]! as! String)!]?.count {
+            return c
         } else {
             return 0
         }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let message = sharedConnection.messages[chat!["id"] as! Int]?[indexPath.row]
+        let message = sharedConnection.messages[UInt64(contact!["id"]! as! String)!]?[indexPath.row]
+        NSLog("\(UInt64(contact!["id"]! as! String)!)")
         let id = (message?.direction == .Incoming ? "incoming" : "outgoing") + "MessageCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(id)! as! MessageCell
         cell.message = message

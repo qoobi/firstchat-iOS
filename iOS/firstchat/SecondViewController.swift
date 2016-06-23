@@ -13,6 +13,8 @@ class ChatCell: UITableViewCell {
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    internal var chatId: UInt64?
+    /*
     internal var chat: [String: NSObject]? {
         didSet {
             photo!.image = chat!["photo"] as? UIImage
@@ -22,7 +24,7 @@ class ChatCell: UITableViewCell {
             timeLabel!.text = date.timeAgoSinceNow()
             timeLabel!.adjustsFontSizeToFitWidth = true
         }
-    }
+    }*/
 }
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -54,16 +56,16 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        (segue.destinationViewController as! ChatViewController).chat = (sender as! ChatCell).chat
+        //(segue.destinationViewController as! ChatViewController).chatId = (sender as! ChatCell).chatId!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sharedConnection.chats.count
+        return 0//sharedConnection.chats.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("chatCell")! as! ChatCell
-        cell.chat = sharedConnection.chats[indexPath.row]
+        //cell.chatId = sharedConnection.chats[indexPath.row]
         return cell
     }
     

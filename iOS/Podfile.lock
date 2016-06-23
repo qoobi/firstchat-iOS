@@ -1,18 +1,27 @@
 PODS:
   - DateTools (1.7.0)
   - JDStatusBarNotification (1.5.3)
-  - UIColor_Hex_Swift (2.0)
+  - OpenSSL (1.0.208)
+  - SwiftKeychainWrapper (1.0.11)
+  - SwiftWebSocket (2.6.2)
+  - UIColor_Hex_Swift (2.1)
 
 DEPENDENCIES:
   - DateTools
   - JDStatusBarNotification
+  - OpenSSL
+  - SwiftKeychainWrapper
+  - SwiftWebSocket
   - UIColor_Hex_Swift (~> 2.0)
 
 SPEC CHECKSUMS:
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   JDStatusBarNotification: 29413865af11c862c17180610b0f46a21118b412
-  UIColor_Hex_Swift: 07130bb5cc010905acc970609255edf4d80f06c8
+  OpenSSL: b187269d386b07452f56af273764ea0636dd5da8
+  SwiftKeychainWrapper: 011a6946923948ffa49708014dd691164d7621d1
+  SwiftWebSocket: 2bb9dda75c87f64eaf9768131141857ca8611aac
+  UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
 
-PODFILE CHECKSUM: ae580199a3cad7d596c7487205d1ab76d1ab2c94
+PODFILE CHECKSUM: 876e97e3871a269e89de67d59544169ea369c62b
 
-COCOAPODS: 1.0.0.beta.6
+COCOAPODS: 1.0.1

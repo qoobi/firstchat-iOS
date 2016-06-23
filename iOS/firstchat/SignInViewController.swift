@@ -8,6 +8,7 @@
 
 import UIKit
 import JDStatusBarNotification
+import SwiftWebSocket
 
 func shakeView(view: UIView) {
     let shake = CABasicAnimation(keyPath: "position")
@@ -27,15 +28,38 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     let textView = UITextView()
     
-    private var step = 1
+    internal var step = 1
     
     var registered: Bool?
     var username: String?
     var name: String?
     var surname: String?
     
+    internal func passcodeSent(ok: Bool?) {
+        if let okay = ok {
+            if okay {
+                textView.text! = "Now enter the 6-digit passcode emailed to " + self.textField.text! + "."
+                textField.text = ""
+                textField.placeholder = "passcode here"
+                UIView.animateWithDuration(0.5) {
+                    self.view.layoutIfNeeded()
+                }
+                step = 2
+            }
+        }
+    }
+    
+    internal func passcodeChecked(ok: Bool?) {
+        if let okay = ok {
+            if okay {
+                performSegueWithIdentifier("logged in", sender: nil)
+            } else {
+                shakeView(textField)
+                step = 2
+            }
+        }
+    }
     @IBAction func proceed(sender: AnyObject) {
-        
         if step == 1 {
             if !textField.text!.containsString("@") {
                 shakeView(textField)
@@ -53,21 +77,15 @@ class SignInViewController: UIViewController {
                 if logoBottom != nil {
                     view.removeConstraint(logoBottom)
                 }
-                registered = sharedConnection.isRegistered(textField.text!)
-                if registered! {
-                    textView.text! = self.textField.text! + " is already on firstchat. Your chats from other devices cannot be downloaded due to end-to-end encryption.\nTo sign in enter the 6-digit passcode emailed to you."
-                } else {
-                    textView.text! = "Welcome to firstchat.\nNow enter the 6-digit passcode emailed to " + self.textField.text! + "."
-                }
-                textField.text = ""
-                textField.placeholder = "passcode here"
-                sharedConnection.sendPasscode()
-                UIView.animateWithDuration(0.5) {
-                    self.view.layoutIfNeeded()
-                }
-                step += 1
+                sharedConnection.sendPasscode(self, textField.text!)
+                step = 0
             }
         } else if step == 2 {
+            sharedConnection.checkPasscode(self, textField.text!)
+            step = 0
+        }
+        
+        /*else if step == 2 {
             if !sharedConnection.checkPasscode(textField.text!) {
                 shakeView(textField)
             } else if registered! {
@@ -105,18 +123,21 @@ class SignInViewController: UIViewController {
                 ]
                 performSegueWithIdentifier("logged in", sender: nil)
             }
-        }
+        }*/
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillHide), name:UIKeyboardWillHideNotification, object: nil);
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name:UIKeyboardWillHideNotification, object: nil);
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        sharedConnection.currentViewController = self
     }
     
     func keyboardWillShow(sender: NSNotification) {

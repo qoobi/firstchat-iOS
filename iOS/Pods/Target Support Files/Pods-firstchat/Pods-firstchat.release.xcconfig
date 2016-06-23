@@ -1,8 +1,12 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/DateTools" "$CONFIGURATION_BUILD_DIR/JDStatusBarNotification" "$CONFIGURATION_BUILD_DIR/UIColor_Hex_Swift"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools" "$PODS_CONFIGURATION_BUILD_DIR/JDStatusBarNotification" "$PODS_CONFIGURATION_BUILD_DIR/SwiftKeychainWrapper" "$PODS_CONFIGURATION_BUILD_DIR/SwiftWebSocket" "$PODS_CONFIGURATION_BUILD_DIR/UIColor_Hex_Swift"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSSL"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/DateTools/DateTools.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/JDStatusBarNotification/JDStatusBarNotification.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/UIColor_Hex_Swift/UIColor_Hex_Swift.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "DateTools" -framework "JDStatusBarNotification" -framework "UIColor_Hex_Swift"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/OpenSSL/lib"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JDStatusBarNotification/JDStatusBarNotification.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwiftWebSocket/SwiftWebSocket.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UIColor_Hex_Swift/UIColor_Hex_Swift.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OpenSSL"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"crypto" -l"ssl" -framework "DateTools" -framework "JDStatusBarNotification" -framework "SwiftKeychainWrapper" -framework "SwiftWebSocket" -framework "UIColor_Hex_Swift"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
